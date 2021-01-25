@@ -1,0 +1,18 @@
+John Murphy
+Clayton Patterson
+Kirk Carmichael
+Quinn Kildare
+Connor Graham
+
+
+1. This product is intended to show off the stock market in an easy and accessible way for anyone both new and experienced.
+
+2. The need our product solves is compiles real time market data in an easy and accessible way.
+
+3. The category is under stock market and the name is Stockbotics.
+
+4. Easily accessible and concise, streamlined easy to read platform.
+
+5. Unlike Robinhood, our product can simulate stock exhanges without the risk of losing your hard earned money.
+
+6. Our product offers the convenience of enhanced security since there's no risk of losing any money.
