@@ -16,3 +16,6 @@ Connor Graham
 5. Unlike Robinhood, our product can simulate stock exhanges without the risk of losing your hard earned money.
 
 6. Our product offers the convenience of enhanced security since there's no risk of losing any money.
+
+
+Here's a change that you guys won't like!
