@@ -4,15 +4,12 @@ Kirk Carmichael
 Quinn Kildare
 Connor Graham
 
+    Stockbotics is a mock trading platform that allows the user to test their investment acumen without risking any money.
+Stockbotics is an educational tool meant especially for new investors, but can also be used by experienced traders. Using real market data,
+the user can make simulated trades, allowing him/her to learn the market and track the potential growth of his/her mock portfolio with no risk at all.
 
-1. This product is intended to show off the stock market in an easy and accessible way for anyone both new and experienced.
+    Unlike other trading platforms such as RobinHood or Fidelity, Stockbotics is totally secure because there's no money and no brokerage involved, 
+so there's no need to give us your sensitive banking information. This also means that there's never any consequences for a bad trade. With Stockbotics, the user is free
+to make mistakes and take risks, building his/her market knowledge so that when he/she is ready to invest for real, he/she invests with confidence.
 
-2. The need our product solves is compiles real time market data in an easy and accessible way.
 
-3. The category is under stock market and the name is Stockbotics.
-
-4. Easily accessible and concise, streamlined easy to read platform.
-
-5. Unlike Robinhood, our product can simulate stock exhanges without the risk of losing your hard earned money.
-
-6. Our product offers the convenience of enhanced security since there's no risk of losing any money.
