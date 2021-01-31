@@ -4,7 +4,7 @@ Kirk Carmichael
 Quinn Kildare
 Connor Graham
 
-    Stockbotics is a mock trading platform that allows the user to test their investment acumen without risking any money.
+    Stockbotics is a mock trading platform that allows the user to test his/her investment acumen without risking any money.
 Stockbotics is an educational tool meant especially for new investors, but can also be used by experienced traders. Using real market data,
 the user can make simulated trades, allowing him/her to learn the market and track the potential growth of his/her mock portfolio with no risk at all.
 
