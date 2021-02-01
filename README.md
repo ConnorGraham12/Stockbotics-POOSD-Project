@@ -10,7 +10,7 @@ Unlike other trading platforms such as RobinHood or Fidelity, Stockbotics is tot
 
 - John Murphy - jrm5399
 - Clayton Patterson
-- Kirk Carmichael
+- Kirk Carmichael - kirkacarmichael
 - Quinn Kildare
 - Connor Graham
 
