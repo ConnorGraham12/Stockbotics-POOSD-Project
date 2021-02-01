@@ -9,7 +9,7 @@ Unlike other trading platforms such as RobinHood or Fidelity, Stockbotics is tot
 ## Team Members
 
 - John Murphy - jrm5399
-- Clayton Patterson
+- Clayton Patterson - Claytpatterson33
 - Kirk Carmichael
 - Quinn Kildare
 - Connor Graham
