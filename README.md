@@ -12,7 +12,7 @@ Unlike other trading platforms such as RobinHood or Fidelity, Stockbotics is tot
 - Clayton Patterson - Claytpatterson33
 - Kirk Carmichael - kirkacarmichael
 - Quinn Kildare - ProtoSpoof
-- Connor Graham
+- Connor Graham - ConnorGraham12
 
 ## Sprint 1
 
