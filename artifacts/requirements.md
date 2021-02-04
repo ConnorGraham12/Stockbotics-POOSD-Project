@@ -4,6 +4,8 @@ The priority of each requirement should be either Necessary, Important, or Desir
 
 Just copied the template for the requirements
 
-| Requirement ID | User Story ID | Requirement                                              | Acceptance Criteria                       | Effort | Priority  | Status   |
-| -------------- | ------------- | -------------------------------------------------------- | ----------------------------------------- | ------ | --------- | -------- |
-| 000            | 001           | Each entry in the product backlog shall have a unique ID | Each entry in the backlog has a unique ID | 1      | Necessary | Verified |
+| Requirement ID | User Story ID | Requirement                                    | Acceptance Criteria                                  | Effort | Priority  | Status   |
+| -------------- | ------------- | ---------------------------------------------- | ---------------------------------------------------- | ------ | --------- | -------- |
+| 000            | 001           | The website must accept a username             | The site accepts the username                        | 1      | Necessary | Verified |
+| 001            | 001           | The website must accept a password             | The site accepts the password                        | 1      | Necessary | Verified |
+| 002            | 002           | The credentials correspond to a unique account | The login credentials are tied to a specific account | 2      | Necessary | Verified |
