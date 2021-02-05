@@ -19,8 +19,8 @@ Unlike other trading platforms such as RobinHood or Fidelity, Stockbotics is tot
 - [Product Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
 - [Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
 - [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
-- [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
-- [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
+- [Burndown Chart](https://docs.google.com/document/d/1Itie3xOoOA9WnvhXmk4ETFRvW3EzAeuQq1Tf-AG4t0g/edit?usp=sharing)
+- [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
 - System Architecture
 - Source Code
 - Automated Tests
@@ -28,12 +28,12 @@ Unlike other trading platforms such as RobinHood or Fidelity, Stockbotics is tot
 
 ## Task Allocation
 
-John Murphy - [What you did]
+John Murphy - Created Burndown / Velocity charts, wrote a User story, helped with embedding links, helped with requirments
 
-Clayton Patterson - [What you did]
+Clayton Patterson - Helped with the creation of the charts, wrote a User story, helped with requirments
 
-Kirk Carmichael - [What you did]
+Kirk Carmichael - Managed team, helped with formatting the charts, wrote user stories, helped with requirments
 
-Quinn Kildare - [What you did]
+Quinn Kildare - Formatted the README, wrote a user story, helped with values of the charts, embedded links, helped with requirments 
 
-Connor Graham - [What you did]
+Connor Graham - Wrote user stories, helped with requirments, helped with README formatting, helped with charts
