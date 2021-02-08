@@ -1,1 +1,1 @@
-tvsadgvashdbvasjhdbs
+"use strict";
