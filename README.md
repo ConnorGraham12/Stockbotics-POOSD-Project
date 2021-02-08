@@ -37,3 +37,22 @@ Kirk Carmichael - Managed team, helped with formatting the charts, wrote user st
 Quinn Kildare - Formatted the README, wrote a user story, helped with values of the charts, embedded links, helped with requirments 
 
 Connor Graham - Wrote user stories, helped with requirments, helped with README formatting, helped with charts
+
+## Sprint 2
+
+- [Product Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
+- Source Code
+
+## Task Allocation
+
+John Murphy - 
+
+Clayton Patterson - 
+
+Kirk Carmichael - 
+
+Quin Kildare - 
+
+Connor Graham - 
