@@ -8,10 +8,9 @@ import 'firebase/auth';
 import {useAuthState} from 'react-firebase-hooks/auth';
 import {useCollectionData} from 'react-firebase-hooks/firestore';
 
+const config = require('./config.json');
 
-firebase.initializeApp({
-    // Config here
-});
+firebase.initializeApp(config.FIREBASE);
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -27,7 +26,6 @@ function App() {
             </header>
 
             <section>
-                // If the user exists they have logged in
                 {user ? <LandingPage /> : <SignIn />}
             </section>
 
@@ -53,7 +51,7 @@ function SignOut() {
 
 function LandingPage() {
     return (
-        <header>Hello</header>
+        <section>{<SignOut />}</section>
     )
 }
 
