@@ -53,6 +53,6 @@ Clayton Patterson -
 
 Kirk Carmichael - 
 
-Quin Kildare - 
+Quinn Kildare - 
 
 Connor Graham - 
