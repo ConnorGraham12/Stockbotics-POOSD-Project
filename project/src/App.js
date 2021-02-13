@@ -22,11 +22,11 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-
+                {user ? <LandingPage /> : <SignIn />}
             </header>
 
             <section>
-                {user ? <LandingPage /> : <SignIn />}
+
             </section>
 
         </div>
