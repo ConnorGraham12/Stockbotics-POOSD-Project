@@ -46,8 +46,8 @@ Connor Graham - Wrote user stories, helped with requirments, helped with README 
 - Source Code
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
 - [Burndown Chart](https://docs.google.com/document/d/1Itie3xOoOA9WnvhXmk4ETFRvW3EzAeuQq1Tf-AG4t0g/edit?usp=sharing)
-- [System Architecture]()
-- [Product Demonstration]()
+- [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
+- [Product Demonstration](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Task Allocation
 
