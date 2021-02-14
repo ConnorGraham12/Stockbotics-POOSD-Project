@@ -16,12 +16,13 @@ Stockbotics will be needing accounts that will branch down into investors and ad
 
 Stockbotics uses a Firebase login, which is able to encorporate a seemless transition for login using a google authentication. We then will be encorporating APIs that will able to get live updates for our graph data to represent the stocks.
 
-[Backend Code]()
+![database diagram](https://user-images.githubusercontent.com/44210814/107887536-c8727b00-6ed4-11eb-8efa-af64ec06b15e.png)
 
 # Business Rules
 
 You should list the assumptions, rules, and guidelines from external sources that are impacting your program design.
 
+We are following the guideline from the LinkedIn learning and constructing the UML charts through the help of lucid charts and following their guidelines on how to format the charts.
 
 
 See Code Complete, Chapter 3
@@ -29,6 +30,8 @@ See Code Complete, Chapter 3
 # User Interface Design
 
 You should have one or more user interface screens in this section. Each screen should be accompanied by an explaination of the screens purpose and how the user will interact with it. You should relate each screen to one another as the user transitions through the states of your application. You should also have a table that relates each window or component to the support using stories. 
+
+insert photos of login page
 
 See Code Complete, Chapter 3
 
@@ -39,6 +42,8 @@ See Code Complete, Chapter 3
 # Security
 
 See Code Complete, Chapter 3
+
+Our security is that we do not use real money, the big upside to this is that we dont need to worry about wiring money or having hackers get access to peoples sensitive banking information.
 
 # Performance
 
@@ -59,10 +64,12 @@ See Code Complete, Chapter 3
 # Input/Output
 
 See Code Complete, Chapter 3
+The input / output for this code would be the APIs calling for the google login authentication and the stock API calling for the specific data on a stock.
 
 # Error Processing
 
 See Code Complete, Chapter 3
+For error handling we will prompt the page to show that it was an invalid search for a stock, or 
 
 # Fault Tolerance
 
