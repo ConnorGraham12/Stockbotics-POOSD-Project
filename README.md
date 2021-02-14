@@ -43,11 +43,11 @@ Connor Graham - Wrote user stories, helped with requirments, helped with README 
 - [Product Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
 - [Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
 - [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
-- Source Code
+- [Source Code](https://github.com/ConnorGraham12/POOSD-Project/blob/main/project/src/App.js)
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
 - [Burndown Chart](https://docs.google.com/document/d/1Itie3xOoOA9WnvhXmk4ETFRvW3EzAeuQq1Tf-AG4t0g/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
-- [Product Demonstration](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- Product Demonstration
 
 ## Task Allocation
 
