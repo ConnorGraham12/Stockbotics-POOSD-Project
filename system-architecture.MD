@@ -10,7 +10,7 @@ Stockbotics will be a simplistic and easy to use program that will allow investo
 
 Stockbotics will be needing accounts that will branch down into investors and admins, these two inheritances will have the basic necessities of being able to create and own an account however the two will have different roles. Admins will be able to terminate investor accounts since they will have higher permissions. 
 
-[UML](<div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/56b8bdd0-0530-40cb-b6fe-552ea9b01085" id="guQbFjDXgXpU"></iframe></div>)
+![Stockbotics UML chart](https://user-images.githubusercontent.com/44210814/107885090-40857480-6ec6-11eb-9475-177df7dc27b7.png)
 
 # Data Design
 
