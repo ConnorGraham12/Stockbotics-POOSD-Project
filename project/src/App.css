@@ -1,3 +1,5 @@
+*{overflow: hidden;}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -49,6 +51,10 @@ a:hover {
 .Landing-about {
     min-height: 80vh;
     color: white;
+    top: 50%;
+    transform: translate(0%, 20%);
+    font-size: calc(8px + 2vmin);
+    
 }
 
 .Landing-contact {
@@ -56,9 +62,23 @@ a:hover {
     background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
 }
 
-.Navbar {
-    min-height: 10vh;
+.login-button {
+
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #6d76f7;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
+.login-button:hover {
+    background-color: #6d76f7;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    border: 0
+}
+
 
 @keyframes App-logo-spin {
     from {
