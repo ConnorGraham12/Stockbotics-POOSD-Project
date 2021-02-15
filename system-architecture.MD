@@ -27,48 +27,44 @@ For our business rules, instead of using the traditional waterfall method,  we a
 
 
 # User Interface Design
+ 
+This explains what stockbotics is and shows off a clear landing page.
+![landingpage](https://user-images.githubusercontent.com/44210814/107903186-8702bf80-6f16-11eb-84d8-d10006e8647a.png)
 
-You should have one or more user interface screens in this section. Each screen should be accompanied by an explaination of the screens purpose and how the user will interact with it. You should relate each screen to one another as the user transitions through the states of your application. You should also have a table that relates each window or component to the support using stories. 
-
-insert photos of login page
-
-See Code Complete, Chapter 3
 
 # Resource Management
 
-See Code Complete, Chapter 3
+Since we will be connecting to 2 data bases in our code, we will be conserving our resources by using only one API call from the first time you log in, after that the website will remember you and you won't need to login again. For our second data-base, for our stocks we will be doing only 5 API calls a minute.
 
 # Security
 
-See Code Complete, Chapter 3
 
-Our security is that we do not use real money, the big upside to this is that we dont need to worry about wiring money or having hackers get access to peoples sensitive banking information.
+Our security is that we do not use real money, the big upside to this is that we dont need to worry about wiring money or having hackers get access to peoples sensitive banking information. For our code level security, we will be implementing a defense style coding when handling login authentication.
 
 # Performance
 
-See Code Complete, Chapter 3
+We will be implementing performance enhancing features at the cost of memory. We want our users to get an endepth dive of what its like to trade on the stock market. The data internally externally will be stored from data bases while the internal data will be stored on the fire base data base, using react hooks.
 
 # Scalability
 
-See Code Complete, Chapter 3
+We have a fluid architecture that is able to enhance the farther along we get through the design and building phase. Our site will be able to handle an influx of new users by using the fire base data base, which would lead to more transactions, bandwidth, and traffic to the website.
 
 # Interoperability
 
-See Code Complete, Chapter 3
+We will not be sharing our data with outside sources, we want to use this site as a safe space for users to learn the stock market.
 
 # Internationalization/Localization
 
-See Code Complete, Chapter 3
+Since Stockbotics uses the US market data, as of now we don't plan on doing translations or branching out of the US.
 
 # Input/Output
 
-See Code Complete, Chapter 3
 The input / output for this code would be the APIs calling for the google login authentication and the stock API calling for the specific data on a stock.
 
 # Error Processing
 
 See Code Complete, Chapter 3
-For error handling we will prompt the page to show that it was an invalid search for a stock, or 
+For error handling we will prompt the page to show that it was an invalid search for a stock, or if a web page isnt valid, we would inform the user that this was an invalid page and send them back to the landing page.
 
 # Fault Tolerance
 
@@ -93,5 +89,4 @@ See Code Complete, Chapter 3
 See Code Complete, Chapter 3
 
 # Change Strategy
-
 
