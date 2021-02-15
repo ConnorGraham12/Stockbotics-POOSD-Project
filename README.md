@@ -34,7 +34,7 @@ Clayton Patterson - Helped with the creation of the charts, wrote a User story, 
 
 Kirk Carmichael - Managed team, helped with formatting the charts, wrote user stories, helped with requirments
 
-Quinn Kildare - Formatted the README, wrote a user story, helped with values of the charts, embedded links, helped with requirments 
+Quinn Kildare - Formatted the README, wrote a user story, helped with values of the charts, embedded links, helped with requirments
 
 Connor Graham - Wrote user stories, helped with requirments, helped with README formatting, helped with charts
 
@@ -47,7 +47,7 @@ Connor Graham - Wrote user stories, helped with requirments, helped with README 
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
 - [Burndown Chart](https://docs.google.com/document/d/1Itie3xOoOA9WnvhXmk4ETFRvW3EzAeuQq1Tf-AG4t0g/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
-- Product Demonstration
+- [Product Demonstration](https://www.youtube.com/watch?v=tJH81iP-6PY&ab_channel=ConnorGraham)
 
 ## Task Allocation
 
