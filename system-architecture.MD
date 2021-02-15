@@ -39,7 +39,7 @@ Since we will be connecting to 2 data bases in our code, we will be conserving o
 # Security
 
 
-Our security is that we do not use real money, the big upside to this is that we dont need to worry about wiring money or having hackers get access to peoples sensitive banking information. For our code level security, we will be implementing a defense style coding when handling login authentication.
+Our security is that we do not use real money, the big upside to this is that we dont need to worry about wiring money or having hackers get access to peoples sensitive banking information. For our code level security, we will be implementing a defense style coding when handling login authentication. Through the fire base, usernames and passwords will be automatically encrypted.
 
 # Performance
 
@@ -68,25 +68,26 @@ For error handling we will prompt the page to show that it was an invalid search
 
 # Fault Tolerance
 
-See Code Complete, Chapter 3
+We will have advanced error handling situations, over time updating each time we create a new feature.
 
 # Architectural Feasibility
 
-See Code Complete, Chapter 3
+Our architecture like mentioned earlier is very fluid and able to change, grow, and adapt to new environments.
 
 # Overengineering
 
-See Code Complete, Chapter 3
+Since we have independent parts of code working together, if one part breaks the code that has no branch to the broken code will still be able to run smoothly, while the error handles the situation.
 
 # Build-vs-Buy Decisions
 
-This section should list the third party libraries your system is using and describe what those libraries are being used for.
-
-See Code Complete, Chapter 3
+We used firebase as our databse
+We used fontawesome for our fonts
 
 # Reuse
 
-See Code Complete, Chapter 3
+ Firebase will act as our database that we store user data - this will be integrated in our overarching architectural design as a way to store, and encrypt user data.
+Fontawesome will be used to make our UI clean, and simple
 
 # Change Strategy
 
+Our strategy is to have a fluid coding environment in order to allow diversity and change for our code while maintaining a core structure.
