@@ -2,9 +2,10 @@ Populate each section with information as it applies to your project. If a secti
 
 # Program Organization
 
-Stockbotics will be a simplistic and easy to use program that will allow investors to do mock trading and allow for 
+Stockbotics will be a simplistic and easy to use program that will allow investors to do mock trading and allow for ease of mind as the program doesn't involve real money in any way.
 
-[Model Designs]()
+![High Level Diagram](https://user-images.githubusercontent.com/44210814/107901700-54ef5e80-6f12-11eb-9e35-3f53727e791a.png)
+
 
 # Code Design
 
@@ -20,12 +21,10 @@ Stockbotics uses a Firebase login, which is able to encorporate a seemless trans
 
 # Business Rules
 
-You should list the assumptions, rules, and guidelines from external sources that are impacting your program design.
+For our business rules, instead of using the traditional waterfall method,  we are following the scrum layout for organizing each week into a sprint, which involves user stories, requirments, and code for each week.
 
-We are following the guideline from the LinkedIn learning and constructing the UML charts through the help of lucid charts and following their guidelines on how to format the charts.
+![Agile-Scrum-Process-2](https://user-images.githubusercontent.com/44210814/107902079-65540900-6f13-11eb-9ff4-a9fcc8d2423f.png)
 
-
-See Code Complete, Chapter 3
 
 # User Interface Design
 
@@ -94,3 +93,5 @@ See Code Complete, Chapter 3
 See Code Complete, Chapter 3
 
 # Change Strategy
+
+
