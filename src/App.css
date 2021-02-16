@@ -27,65 +27,21 @@ a:hover {
 }
 
 .Landing {
-    background-color: #162b32;
-    position: absolute;
-    min-width: 100vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    color: white;
+    background: lin;
+    background: linear-gradient(-70deg, rgb(110,94,254) 30%, rgb(0,0,0) 30%);
+    display: flex;
+    justify-content:  center;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    min-height: 85vh;
     font-size: calc(10px + 2vmin);
 }
 
-.Landing-p {
-    transform: translate(50%, 0%);
-    max-width: 50%;
-    background-color: inherit;
-}
-
 .Landing-header {
-    background-color: inherit;
+    flex-basis: 100%;
 }
 
-.Landing-about {
-    min-height: 80vh;
-    color: white;
-    top: 50%;
-    transform: translate(0%, 20%);
-    font-size: calc(8px + 2vmin);
-    
-}
-
-.Landing-contact {
-    min-height: 10vh;
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
-}
-
-.login-button {
-
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: #6d76f7;
-    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-}
-.login-button:hover {
-    background-color: #6d76f7;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
-    border: 0
-}
-
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+.Landing-p {
+    width: 70vw;
 }

@@ -19,11 +19,28 @@ class Navbar extends Component {
                             </li>
                         )
                     })}
-                
                 </ul>
+                {this.props.user ? <this.SignOut /> : <this.SignIn />}
             </nav>
         )
     }
 
+    SignIn = () => {
+        const signInWithGoogle = () => {
+            const provider = new this.props.firebase.auth.GoogleAuthProvider();
+            this.props.auth.signInWithPopup(provider);
+        }
+        return (
+            <button className="login-button" onClick={signInWithGoogle}>Log In</button>
+        )
+    }
+    
+    SignOut = () => {
+        return this.props.auth.currentUser && (
+            <button className="login-button" onClick={() => this.props.auth.signOut()}>Log Out</button>
+        )
+    }
+
 }
+
 export default Navbar 
