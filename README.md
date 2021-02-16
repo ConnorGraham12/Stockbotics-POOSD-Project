@@ -60,3 +60,30 @@ Kirk Carmichael - Worked on app.js, edited the styling of the css files, wrote u
 Quinn Kildare - Initiated the login page, managed and thoroughly explained how to set up node / react js to the team, wrote user stories
 
 Connor Graham - worked on system architecture, wrote user stories, examined the charts for correctness, helped with app.js file
+
+
+# Sprint 3
+
+- [Product Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
+- [Source Code](https://github.com/ConnorGraham12/POOSD-Project/blob/main/project/src/App.js)
+- [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
+- [Burndown Chart](https://docs.google.com/document/d/1VlfT0K3VpYwlXfyMWmhx9MUtbrUAaPw4uDyxTlEd4po/edit?usp=sharing)
+- [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
+- [Product Demonstration](https://www.youtube.com/watch?v=tJH81iP-6PY&ab_channel=ConnorGraham)
+- Design Document
+- Automated Tests
+
+## Task Allocation
+
+John Murphy - Updated ReadMe, helped design website, Coded in react with the group, helped update the requirments sprint backlog, and design document.
+
+Clayton Patterson - Coded in react with group, wrote more requirments, helped organize the team for group meetings, worked on design document.
+
+Kirk Carmichael - coded in react, worked on the css styling, worked on design document, helped with automated testing, wrote more requirments.
+
+Quinn Kildare - coded in react, worked on automated testing, gave more requirments, worked on css styling, helped with overall layout of code, helped with design document.
+
+Connor Graham - coded in react, worked on automated testing, wrote more requirments, worked on css styling, helped with automated tests, helped with design document.
+
