@@ -1,10 +1,19 @@
-Populate each section with information as it applies to your project. If a section does not apply, explain why. Include diagrams (or links to diagrams) in each section, as appropriate.  For example, sketches of the user interfaces along with an explanation of how the interface components will work; ERD diagrams of the database; rough class diagrams; context diagrams showing the system boundary; etc. Do _not_ link to your diagrams, embed them directly in this document by uploading the images to your GitHub and linking to them. Do _not_ leave any section blank.
 
 # Program Organization
 
 Stockbotics will be a simplistic and easy to use program that will allow investors to do mock trading and allow for ease of mind as the program doesn't involve real money in any way.
 
+- System Context Diagram
+![UI diagram](https://user-images.githubusercontent.com/44210814/108262352-d291b500-7132-11eb-8ea7-6e9246d30d6f.png)
+
+
+
+ - Container Diagram
 ![High Level Diagram](https://user-images.githubusercontent.com/44210814/107901700-54ef5e80-6f12-11eb-9e35-3f53727e791a.png)
+
+
+ - Component Diagram
+![UI diagram (1)](https://user-images.githubusercontent.com/44210814/108264117-21404e80-7135-11eb-922b-c7b52395b427.png)
 
 
 # Code Design
