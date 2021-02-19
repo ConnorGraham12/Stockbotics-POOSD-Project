@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { MenuItems } from "./MenuItems"
+import { Link } from 'react-router-dom'
+import { MenuItems } from './MenuItems'
 import './Navbar.css'
 
 class Navbar extends Component {
@@ -13,9 +14,9 @@ class Navbar extends Component {
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                                <Link className={item.cName} to={item.url}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}
@@ -34,7 +35,7 @@ class Navbar extends Component {
             <button className="login-button" onClick={signInWithGoogle}>Log In</button>
         )
     }
-    
+
     SignOut = () => {
         return this.props.auth.currentUser && (
             <button className="login-button" onClick={() => this.props.auth.signOut()}>Log Out</button>
