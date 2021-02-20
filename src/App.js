@@ -5,8 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Pages
-import About from './pages/About';
-import Contributors from './pages/Contributors';
+import Contributors from './pages/Contributors/Contributors';
 import Dashboard from './pages/Dashboard';
 import LandingPage from './pages/LandingPage';
 import Error404 from './pages/Error404/Error404';
@@ -42,7 +41,7 @@ function App() {
 					</Route>
 
 					<Route path='/about'>
-						<About />
+						<LandingPage />
 					</Route>
 
 					<Route path='/contributors'>
