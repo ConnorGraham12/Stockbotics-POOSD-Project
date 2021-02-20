@@ -1,12 +1,22 @@
 import React from "react";
 import "./Portfolio.css";
-
+import StockEntry from "./StockEntry.js";
 // This should contain a chart comprised of stock entries
 const Portfolio = () => {
   return (
     <div>
-      Portfolio
-      <p className="NERD">Some red stuff</p>
+      This is a portfolio. I gotta figure out how to add and remove stonks.
+      <ul>
+        <li>
+          <StockEntry />
+        </li>
+        <li>
+          <StockEntry />
+        </li>
+        <li>
+          <StockEntry />
+        </li>
+      </ul>
     </div>
   );
 };
