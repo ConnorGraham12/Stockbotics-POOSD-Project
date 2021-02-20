@@ -1,0 +1,14 @@
+a{
+    color: silver ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: url(cont-background.png) center no-repeat;
+  }
