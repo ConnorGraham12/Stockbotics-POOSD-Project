@@ -9,7 +9,7 @@ import About from './pages/About';
 import Contributors from './pages/Contributors';
 import Dashboard from './pages/Dashboard';
 import LandingPage from './pages/LandingPage';
-import Error404 from './pages/Error404';
+import Error404 from './pages/Error404/Error404';
 import Pricing from './pages/Pricing';
 
 // Components
