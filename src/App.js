@@ -1,8 +1,25 @@
 import logo from './logo.png';
 import './App.css';
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Pages
+import About from './pages/About';
+import Contributors from './pages/Contributors';
+import Dashboard from './pages/Dashboard';
+import LandingPage from './pages/LandingPage';
+import Error404 from './pages/Error404';
+import Pricing from './pages/Pricing';
+
+// Components
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+
+// React Router setup
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+// Firebase setup
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
@@ -14,37 +31,41 @@ const config = require('./config.json');
 
 firebase.initializeApp(config.FIREBASE);
 
-const auth = firebase.auth();
-const firestore = firebase.firestore();
-
-
 function App() {
+	return (
+		<Router>
+			<div className='App'>
+				<Navbar />
+				<Switch>
+					<Route exact path='/'>
+						<LandingPage />
+					</Route>
 
-    const [user] = useAuthState(auth);
-    return (
-        <div className="App">
-            {<Navbar user={user} auth={auth} firebase={firebase}/>}
-            {<LandingPage />}
-            {<Footer />}
-        </div>
+					<Route path='/about'>
+						<About />
+					</Route>
 
+					<Route path='/contributors'>
+						<Contributors />
+					</Route>
 
-    );
-}
+					<Route path='/dashboard'>
+						<Dashboard />
+					</Route>
 
-function LandingPage() {
-   
-    return (
-        <div className="Landing"> 
-            
-                <div className="Landing-header">What is StockBotics?</div>
-                    <p className="Landing-p">
-                        Stockbotics is a mock trading platform that allows the user to test his/her investment acumen without risking any money. It is an educational tool meant especially for new investors, but can also be used by experienced traders. Using real market data, the user can make simulated trades, allowing him/her to learn the market and track the potential growth of his/her mock portfolio with no risk at all.
+					<Route path='/pricing'>
+						<Pricing />
+					</Route>
 
-                        Unlike other trading platforms such as RobinHood or Fidelity, Stockbotics is totally secure because there's no money and no brokerage involved, so there's no need to give us your sensitive banking information. This also means that there's never any consequences for a bad trade. With Stockbotics, the user is free to make mistakes and take risks, building his/her market knowledge so that when he/she is ready to invest for real, he/she invests with confidence.
-                    </p>
-        </div>        
-    )
+					{/* 404 error user tried going to an unkown page */}
+					<Route path='*'>
+						<Error404 />
+					</Route>
+				</Switch>
+				<Footer />
+			</div>
+		</Router>
+	);
 }
 
 export default App;
