@@ -1,8 +1,8 @@
 import logo from './logo.png';
 import './App.css';
 
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 // Pages
 import About from './pages/About';
@@ -13,12 +13,11 @@ import Error404 from './pages/Error404';
 import Pricing from './pages/Pricing';
 
 // Components
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 // React Router setup
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 // Firebase setup
 import firebase from 'firebase/app';
@@ -32,48 +31,41 @@ const config = require('./config.json');
 
 firebase.initializeApp(config.FIREBASE);
 
-const auth = firebase.auth();
-const firestore = firebase.firestore();
-
 function App() {
+	return (
+		<Router>
+			<div className='App'>
+				<Navbar />
+				<Switch>
+					<Route exact path='/'>
+						<LandingPage />
+					</Route>
 
-    const [user] = useAuthState(auth);
+					<Route path='/about'>
+						<About />
+					</Route>
 
-    return (
-        <Router>
-            <div className="App">
-                <Navbar user={user} auth={auth} firebase={firebase} />
-                <Switch>
-                    <Route exact path="/">
-                        <LandingPage />
-                    </Route>
+					<Route path='/contributors'>
+						<Contributors />
+					</Route>
 
-                    <Route path="/about">
-                        <About />
-                    </Route>
+					<Route path='/dashboard'>
+						<Dashboard />
+					</Route>
 
-                    <Route path="/contributors">
-                        <Contributors />
-                    </Route>
+					<Route path='/pricing'>
+						<Pricing />
+					</Route>
 
-                    <Route path="/dashboard">
-                        <Dashboard />
-                    </Route>
-
-                    <Route path="/pricing">
-                        <Pricing />
-                    </Route>
-
-                    {/* 404 error user tried going to an unkown page */}
-                    <Route path="*">
-                        <Error404 />
-                    </Route>
-                </Switch>
-                <Footer />
-            </div>
-        </Router>
-
-    );
+					{/* 404 error user tried going to an unkown page */}
+					<Route path='*'>
+						<Error404 />
+					</Route>
+				</Switch>
+				<Footer />
+			</div>
+		</Router>
+	);
 }
 
 export default App;
