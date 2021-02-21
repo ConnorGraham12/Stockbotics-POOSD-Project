@@ -1,5 +1,5 @@
 import React from "react";
-import "./Portfolio.css";
+import "./StockEntry.css";
 import StockEntry from "./StockEntry.js";
 // This should contain a chart comprised of stock entries
 // I think we should make the api call here and manage

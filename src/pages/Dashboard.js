@@ -1,5 +1,5 @@
 import React from "react";
-import StockList from "../components/Portfolio/StockList.js";
+import StockList from "../components/StockEntry/StockList.js";
 const Dashboard = () => {
   return (
     <div>

@@ -8,8 +8,10 @@ import DisplayBox from "../misc/DisplayBox.js";
 // component or not
 const StockEntry = () => {
   return (
-    <div>
+    <div className="row">
       <h4>All this info belongs to a particular stock</h4>
+      <DisplayBox />
+      <DisplayBox />
       <DisplayBox />
       <DisplayBox />
       <DisplayBox />
