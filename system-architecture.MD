@@ -13,7 +13,8 @@ Stockbotics will be a simplistic and easy to use program that will allow investo
 
 
  - Component Diagram
-![UI diagram (1)](https://user-images.githubusercontent.com/44210814/108264117-21404e80-7135-11eb-922b-c7b52395b427.png)
+![component](https://user-images.githubusercontent.com/44210814/108637508-fb7ab880-7458-11eb-8b9f-d4585c1cfe60.png)
+
 
 
 # Code Design
@@ -38,7 +39,7 @@ For our business rules, instead of using the traditional waterfall method,  we a
 # User Interface Design
  
 This explains what stockbotics is and shows off a clear landing page.
-![landingpage](https://user-images.githubusercontent.com/44210814/107903186-8702bf80-6f16-11eb-84d8-d10006e8647a.png)
+![UI Diagram](https://user-images.githubusercontent.com/44210814/108638049-54e3e700-745b-11eb-83e9-c273879a33d2.png)
 
 
 # Resource Management
