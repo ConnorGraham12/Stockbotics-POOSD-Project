@@ -38,8 +38,8 @@ For our business rules, instead of using the traditional waterfall method,  we a
 
 # User Interface Design
  
-This explains what stockbotics is and shows off a clear landing page.
-![UI Diagram](https://user-images.githubusercontent.com/44210814/108638049-54e3e700-745b-11eb-83e9-c273879a33d2.png)
+This shows off the layout of the stockbotics website.
+![UI Diagram](https://user-images.githubusercontent.com/44210814/108638354-e4d66080-745c-11eb-84d7-062ea80ee0a0.png)
 
 
 # Resource Management
