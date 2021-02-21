@@ -1,11 +1,14 @@
 import React from "react";
-import "./Portfolio.css";
+import "./StockEntry.css";
 import StockEntry from "./StockEntry.js";
 // This should contain a chart comprised of stock entries
-const Portfolio = () => {
+// I think we should make the api call here and manage
+// state in this component
+const StockList = () => {
   return (
     <div>
-      This is a portfolio. I gotta figure out how to add and remove stonks.
+      This is a StockList. We might have one list for the portfolio, and another
+      for a watchlist.
       <ul>
         <li>
           <StockEntry />
@@ -21,4 +24,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default StockList;

@@ -7,8 +7,10 @@ import './Navbar.css';
 function Navbar(props) {
 	return (
 		<nav className='NavbarItems'>
-			<h1 className='navbar-logo'><a href="/">
-				Stockbotic</a>s<i className='fas fa-coins'></i>
+			<h1 className='navbar-logo'>
+				<a href='/'>
+					Stockbotics<i className='fas fa-coins'></i>
+				</a>
 			</h1>
 			<div className='menu-icon'></div>
 			<ul className='nav-menu'>
