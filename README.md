@@ -72,8 +72,8 @@ Connor Graham - worked on system architecture, wrote user stories, examined the 
 - [Burndown Chart](https://docs.google.com/document/d/1VlfT0K3VpYwlXfyMWmhx9MUtbrUAaPw4uDyxTlEd4po/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Product Demonstration](https://www.youtube.com/watch?v=tJH81iP-6PY&ab_channel=ConnorGraham)
-- Design Document
 - Automated Tests
+- Product Demonstration
 
 ## Task Allocation
 
