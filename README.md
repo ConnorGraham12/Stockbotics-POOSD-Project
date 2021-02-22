@@ -83,7 +83,7 @@ Clayton Patterson - Coded in react with group, wrote more requirments, helped or
 
 Kirk Carmichael - coded in react, worked on the css styling, worked on design document, helped with automated testing, wrote more requirments.
 
-Quinn Kildare - coded in react, worked on automated testing, gave more requirments, worked on css styling, helped with overall layout of code, helped with design document.
+Quinn Kildare - coded in react, worked on database implementation with user data, gave more requirments, worked on css styling, helped with overall layout of code, helped with design document.
 
-Connor Graham - coded in react, worked on automated testing, wrote more requirments, worked on css styling, helped with automated tests, helped with design document.
+Connor Graham - coded in react, worked on database implementation with storing stock information, wrote more requirments, worked on css styling, helped with design document, helped with css.
 
