@@ -73,7 +73,7 @@ Connor Graham - worked on system architecture, wrote user stories, examined the 
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Product Demonstration](https://www.youtube.com/watch?v=tJH81iP-6PY&ab_channel=ConnorGraham)
 - Automated Tests
-- Product Demonstration
+- [Product Demonstration](https://www.youtube.com/watch?v=bppb0iU8u1g&feature=youtu.be)
 
 ## Task Allocation
 
