@@ -6,14 +6,18 @@ Stockbotics will be a simplistic and easy to use program that will allow investo
 - System Context Diagram
 ![UI diagram](https://user-images.githubusercontent.com/44210814/108262352-d291b500-7132-11eb-8ea7-6e9246d30d6f.png)
 
-
+The System Context Diagram dives into the basic framework of how our website operates, The user will be given stocks given from the internet, which can then be setup via googles email system to update the user when a specificed stock was going up or down.
 
  - Container Diagram
 ![High Level Diagram](https://user-images.githubusercontent.com/44210814/107901700-54ef5e80-6f12-11eb-9e35-3f53727e791a.png)
 
+The Container Diagram dives more in-depth for charts and shows off the use of the web pages and the functionality behind them. The user / investor is able to access a certain web page from the website, whcih leads into an API application that out sources its data which in our case will be stocks from Yahoo stocks database. There is another database from google that is setup through firebase for easy login access only requiring you to have a google account. The API application then leads into the mainframe investment system and again the emailing system that will update the user on certain stock data that he or she is interested in. The mainframe investment system is where we store all the information about the selected stocks.
+
 
  - Component Diagram
 ![component](https://user-images.githubusercontent.com/44210814/108637508-fb7ab880-7458-11eb-8b9f-d4585c1cfe60.png)
+
+The Component Diagram dives deep into how everything on the website is being handled from a backend perspective. We branch off into three nodes which in this case for Stockbotics would be Signin Controller, Reset Password Controller, and the account summary. The first two nodes are all being handled by the firebase login system we implemented which would be on googles end however the 3rd node being the account summary provides the summary of the user / investors stock account which is handled on a seperate database. On the next layer we have  our components which in this case would be Security Component, Email Component, and the Main frame account. The security component provides functionality which is related to signing into your account, being able to change your password, and even a light form of encryption will be implemented on each account. Again the Email component will update the user / investor for certain data he or she is interested in. The main frame account holds the information of the current stock being used. The final layer which would be the source of the data or the functionality of the prior levels, for this we have the firebase and google database, the emailing system, and the how the mainframe is implemented. Firebase stores the users account information, User authentication, credentials, and access logs. The email system uses googles email system, and the main frame holds all the information of the user / investor which includes: transactions, net, profit, net lose, and total.
 
 
 

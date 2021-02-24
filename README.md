@@ -71,7 +71,6 @@ Connor Graham - worked on system architecture, wrote user stories, examined the 
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
 - [Burndown Chart](https://docs.google.com/document/d/1VlfT0K3VpYwlXfyMWmhx9MUtbrUAaPw4uDyxTlEd4po/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
-- [Product Demonstration](https://www.youtube.com/watch?v=tJH81iP-6PY&ab_channel=ConnorGraham)
 - Automated Tests
 - [Product Demonstration](https://www.youtube.com/watch?v=bppb0iU8u1g&feature=youtu.be)
 
@@ -86,4 +85,28 @@ Kirk Carmichael - coded in react, worked on the css styling, worked on design do
 Quinn Kildare - coded in react, worked on database implementation with user data, gave more requirments, worked on css styling, helped with overall layout of code, helped with design document.
 
 Connor Graham - coded in react, worked on database implementation with storing stock information, wrote more requirments, worked on css styling, helped with design document, helped with css.
+
+# Sprint 4
+
+- [Product Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
+- [Source Code](https://github.com/ConnorGraham12/POOSD-Project/blob/main/project/src/App.js)
+- [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
+- Burndown Chart
+- [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
+- Automated Tests
+- Product Demonstration
+
+## Task Allocation
+
+John Murphy - Updated ReadMe, coded with group, updated System Architecture, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+
+Clayton Patterson - updating trello board, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+
+Kirk Carmichael - coded with group, organized team for group meetings, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+
+Quinn Kildare - implemented back end, coded with group, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+
+Connor Graham - implemented back end, coded with group, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
 
