@@ -43,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@firebase/testing": "^0.20.11",
+    "mocha": "^8.3.0"
   }
 }
