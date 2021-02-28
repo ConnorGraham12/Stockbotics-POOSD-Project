@@ -106,7 +106,7 @@ Clayton Patterson -
 
 Kirk Carmichael - 
 
-Quinn Kildare - 
+Quinn Kildare - Fixed automated testing, updated trello board.
 
 Connor Graham - 
 
