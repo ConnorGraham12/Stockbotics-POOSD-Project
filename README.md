@@ -100,13 +100,13 @@ Connor Graham - coded in react, worked on database implementation with storing s
 
 ## Task Allocation
 
-John Murphy - Updated ReadMe, coded with group, updated System Architecture, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+John Murphy - Updated ReadMe, coded with group, updated Trello Board, updated System Architecture, helped with implementing test code, updated burndown and velocity charts.
 
-Clayton Patterson - updating trello board, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+Clayton Patterson - 
 
-Kirk Carmichael - coded with group, organized team for group meetings, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+Kirk Carmichael - 
 
-Quinn Kildare - implemented back end, coded with group, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+Quinn Kildare - 
 
-Connor Graham - implemented back end, coded with group, worked on CSS, helped with implementing API, hooks and asynchronous, helped with implementing charts.
+Connor Graham - 
 
