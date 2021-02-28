@@ -18,18 +18,6 @@ import Footer from './components/Footer/Footer';
 // React Router setup
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-// Firebase setup
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
-
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
-
-const config = require('./config.json');
-
-firebase.initializeApp(config.FIREBASE);
-
 function App() {
 	return (
 		<Router>

@@ -1,9 +1,7 @@
 import React from 'react';
 import './LoginButton.css';
 
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import firebase from '../../services/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 function LoginButton() {
@@ -16,7 +14,6 @@ function LoginButton() {
 			!profileExists &&
 			firebase.firestore().collection('users').doc(auth.currentUser.uid).set({
 				title: auth.currentUser.displayName,
-				created: firebase.firestore.FieldValue.serverTimestamp(),
 				uid: auth.currentUser.uid,
 				assets: [],
 			})
