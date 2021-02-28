@@ -61,7 +61,6 @@ Quinn Kildare - Initiated the login page, managed and thoroughly explained how t
 
 Connor Graham - worked on system architecture, wrote user stories, examined the charts for correctness, helped with app.js file
 
-
 # Sprint 3
 
 - [Product Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
@@ -102,11 +101,10 @@ Connor Graham - coded in react, worked on database implementation with storing s
 
 John Murphy - Updated ReadMe, coded with group, updated Trello Board, updated System Architecture, helped with implementing test code, updated burndown and velocity charts.
 
-Clayton Patterson - 
+Clayton Patterson -
 
-Kirk Carmichael - 
+Kirk Carmichael - Dashboard now dynamically resizes based on stock portfolio. Added the ability to remove stocks from portfolio.
 
 Quinn Kildare - Fixed automated testing, updated trello board, setup backend server, added GET and POST requests for api calls.
 
-Connor Graham - 
-
+Connor Graham -
