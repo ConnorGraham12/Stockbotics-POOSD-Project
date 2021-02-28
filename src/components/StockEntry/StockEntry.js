@@ -17,6 +17,7 @@ const StockEntry = (props) => {
       <DisplayBox info={props.overallReturn} />
       <DisplayBox info={props.returnWithSells} />
       <DisplayBox info={props.pricePerShare} />
+      <button onClick={props.remove}>click to remove stonk</button>
     </div>
   );
 };
