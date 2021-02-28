@@ -6,18 +6,18 @@ import DisplayBox from "../misc/DisplayBox.js";
 // each stock entry should have many display boxes
 // trying to decide if the stock entry should be dummy
 // component or not
-const StockEntry = () => {
+const StockEntry = (props) => {
   return (
     <div className="row">
-      <h4>All this info belongs to a particular stock</h4>
-      <DisplayBox />
-      <DisplayBox />
-      <DisplayBox />
-      <DisplayBox />
-      <DisplayBox />
-      <DisplayBox />
-      <DisplayBox />
-      <DisplayBox />
+      <h4>Gotta figure out api calls</h4>
+      <DisplayBox info={props.symbol} />
+      <DisplayBox info={props.shares} />
+      <DisplayBox info={props.value} />
+      <DisplayBox info={props.oneDayReturn} />
+      <DisplayBox info={props.overallReturn} />
+      <DisplayBox info={props.returnWithSells} />
+      <DisplayBox info={props.pricePerShare} />
+      <button onClick={props.remove}>click to remove stonk</button>
     </div>
   );
 };

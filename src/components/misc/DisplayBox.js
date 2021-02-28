@@ -4,8 +4,12 @@ import "./DisplayBox.css";
 // and displays it
 // add functionality to make increasing values green and decreasing
 // values red
-const DisplayBox = () => {
-  return <div className="window"> Display some info here</div>;
+const DisplayBox = (props) => {
+  return (
+    <div className="window">
+      <p>{props.info}</p>
+    </div>
+  );
 };
 
 export default DisplayBox;
