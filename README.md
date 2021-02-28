@@ -95,7 +95,7 @@ Connor Graham - coded in react, worked on database implementation with storing s
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
 - [Burndown Chart](https://docs.google.com/document/d/16PJveeuqevQLmC36XJ8_XuKf4OTSVH5c4yPPv18RGF0/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
-- Automated Tests
+- [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
 - Product Demonstration
 
 ## Task Allocation
