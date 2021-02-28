@@ -106,7 +106,7 @@ Clayton Patterson -
 
 Kirk Carmichael - 
 
-Quinn Kildare - Fixed automated testing, updated trello board.
+Quinn Kildare - Fixed automated testing, updated trello board, setup backend server, added GET and POST requests for api calls.
 
 Connor Graham - 
 
