@@ -1,0 +1,106 @@
+[debug] [2021-02-28T04:03:48.374Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T04:03:48.377Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\John Murphy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-02-28T04:03:48.378Z] CLI Version:   9.5.0
+[debug] [2021-02-28T04:03:48.378Z] Platform:      win32
+[debug] [2021-02-28T04:03:48.378Z] Node Version:  v14.15.5
+[debug] [2021-02-28T04:03:48.380Z] Time:          Sat Feb 27 2021 23:03:48 GMT-0500 (Eastern Standard Time)
+[debug] [2021-02-28T04:03:48.380Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T04:03:48.381Z] 
+[debug] [2021-02-28T04:03:48.394Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-28T04:03:48.395Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: auth, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, firestore"}}
+[debug] [2021-02-28T04:03:48.433Z] [hub] writing locator at C:\Users\JOHNMU~1\AppData\Local\Temp\hub-stockbotics-dev.json
+[debug] [2021-02-28T04:03:48.475Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-02-28T04:03:48.475Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-02-28T04:03:48.475Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\John Murphy\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.11.12.jar","--host","localhost","--port",8080,"--rules","C:\\Users\\John Murphy\\Desktop\\School\\SPRING 2021\\POOP\\POOSD-Project\\firestore.rules"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\John Murphy\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.11.12.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"C:\\\\Users\\\\John Murphy\\\\Desktop\\\\School\\\\SPRING 2021\\\\POOP\\\\POOSD-Project\\\\firestore.rules\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2021-02-28T04:03:50.904Z] API endpoint: http://localhost:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://localhost:8080"}}
+[debug] [2021-02-28T04:03:50.905Z] 
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8080\n\nDev App Server is now running.\n\r\n"}}
+[debug] [2021-02-28T04:03:54.544Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-02-28T04:03:54.544Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-02-28T04:03:54.544Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\John Murphy\\.cache\\firebase\\emulators\\ui-v1.4.2\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\John Murphy\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.4.2\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-02-28T04:03:54.692Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-02-28T04:04:07.937Z] Feb 27, 2021 11:04:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 27, 2021 11:04:07 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2021-02-28T04:04:09.054Z] Feb 27, 2021 11:04:09 PM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError
+INFO: operation failed: 
+false for 'create' @ L5, false for 'create' @ L9
+com.google.cloud.datastore.core.exception.DatastoreException: 
+false for 'create' @ L5, false for 'create' @ L9
+	at com.google.cloud.datastore.core.exception.DatastoreException$Builder.build(DatastoreException.java:111)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.verboseError(EmulatorRulesAuthorizer.java:288)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:265)
+	at com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkCommit(EmulatorRulesAuthorizer.java:117)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.commitHelper(CloudFirestoreV1.java:817)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:731)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:715)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.write(CloudFirestoreV1.java:704)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.handleRequest(CloudFirestoreV1WriteStream.java:208)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.write(CloudFirestoreV1WriteStream.java:136)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.onNext(CloudFirestoreV1WriteStream.java:92)
+	at com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.onNext(CloudFirestoreV1WriteStream.java:25)
+	at io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:255)
+	at io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onMessage(Contexts.java:76)
+	at io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onMessage(Contexts.java:76)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:309)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:292)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:765)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 27, 2021 11:04:09 PM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError\r\nINFO: operation failed: \nfalse for 'create' @ L5, false for 'create' @ L9\r\ncom.google.cloud.datastore.core.exception.DatastoreException: \nfalse for 'create' @ L5, false for 'create' @ L9\r\n\tat com.google.cloud.datastore.core.exception.DatastoreException$Builder.build(DatastoreException.java:111)\r\n\tat com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.verboseError(EmulatorRulesAuthorizer.java:288)\r\n\tat com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.withVerboseErrors(EmulatorRulesAuthorizer.java:265)\r\n\tat com.google.cloud.datastore.emulator.impl.rules.EmulatorRulesAuthorizer.checkCommit(EmulatorRulesAuthorizer.java:117)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.commitHelper(CloudFirestoreV1.java:817)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:731)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:715)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1.write(CloudFirestoreV1.java:704)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.handleRequest(CloudFirestoreV1WriteStream.java:208)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.write(CloudFirestoreV1WriteStream.java:136)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.onNext(CloudFirestoreV1WriteStream.java:92)\r\n\tat com.google.cloud.datastore.emulator.impl.CloudFirestoreV1WriteStream.onNext(CloudFirestoreV1WriteStream.java:25)\r\n\tat io.grpc.stub.ServerCalls$StreamingServerCallHandler$StreamingServerCallListener.onMessage(ServerCalls.java:255)\r\n\tat io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)\r\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onMessage(Contexts.java:76)\r\n\tat io.grpc.ForwardingServerCallListener.onMessage(ForwardingServerCallListener.java:33)\r\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onMessage(Contexts.java:76)\r\n\tat io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailableInternal(ServerCallImpl.java:309)\r\n\tat io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.messagesAvailable(ServerCallImpl.java:292)\r\n\tat io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1MessagesAvailable.runInContext(ServerImpl.java:765)\r\n\tat io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)\r\n\tat io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\r\n\tat java.lang.Thread.run(Unknown Source)\r\n\r\n"}}
+[debug] [2021-02-28T04:04:09.673Z] Feb 27, 2021 11:04:09 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 27, 2021 11:04:09 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.io.IOException: An existing connection was forcibly closed by the remote host\r\n\tat sun.nio.ch.SocketDispatcher.read0(Native Method)\r\n\tat sun.nio.ch.SocketDispatcher.read(Unknown Source)\r\n\tat sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)\r\n\tat sun.nio.ch.IOUtil.read(Unknown Source)\r\n\tat sun.nio.ch.SocketChannelImpl.read(Unknown Source)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.lang.Thread.run(Unknown Source)\r\n\r\n"}}
