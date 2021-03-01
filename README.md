@@ -95,7 +95,7 @@ Connor Graham - coded in react, worked on database implementation with storing s
 - [Burndown Chart](https://docs.google.com/document/d/16PJveeuqevQLmC36XJ8_XuKf4OTSVH5c4yPPv18RGF0/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
-- Product Demonstration
+- [Product Demonstration](https://youtu.be/tEyVF-3ARnI)
 
 ## Task Allocation
 
@@ -107,4 +107,4 @@ Kirk Carmichael - Dashboard now dynamically resizes based on stock portfolio. Ad
 
 Quinn Kildare - Fixed automated testing, updated trello board, setup backend server, added GET and POST requests for api calls.
 
-Connor Graham -
+Connor Graham - Recorded product demosntration video, edited readme. 
