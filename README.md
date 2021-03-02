@@ -107,4 +107,28 @@ Kirk Carmichael - Dashboard now dynamically resizes based on stock portfolio. Ad
 
 Quinn Kildare - Fixed automated testing, updated trello board, setup backend server, added GET and POST requests for api calls.
 
-Connor Graham - Recorded product demosntration video, edited readme. 
+Connor Graham - Recorded product demosntration video, edited readme.
+
+# Sprint 5
+
+- [Product Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
+- [Source Code](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.js)
+- [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
+- Burndown Chart
+- [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
+- [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
+- Product Demonstration
+
+## Task Allocation
+
+John Murphy - Updated ReadMe.
+
+Clayton Patterson -
+
+Kirk Carmichael -
+
+Quinn Kildare - 
+
+Connor Graham - 
