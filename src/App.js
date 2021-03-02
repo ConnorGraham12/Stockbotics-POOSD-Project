@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 
 // Pages
 import Contributors from './pages/Contributors/Contributors';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/Dashboard/Dashboard';
 import LandingPage from './pages/LandingPage';
 import Error404 from './pages/Error404/Error404';
 import Pricing from './pages/Pricing';
@@ -17,6 +17,8 @@ import Footer from './components/Footer/Footer';
 
 // React Router setup
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+import { getAssets } from './services/firebase';
 
 function App() {
 	return (

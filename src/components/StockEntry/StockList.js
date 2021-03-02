@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './StockEntry.css';
 import StockEntry from './StockEntry.js';
-import firebase from '../../services/firebase';
+import { getAssets } from '../../services/firebase';
 import getStockInfo from '../../services/backend';
 // This should contain a chart comprised of stock entries
 // I think we should make the api call here and manage
@@ -9,33 +9,21 @@ import getStockInfo from '../../services/backend';
 
 class StockList extends Component {
 	// this is the state of the StockList
-	state = {
-		// array of stock objects
-		// hardcoded a couple examples to test add and remove buttons
-		stocks: [
-			{
-				symbol: 'AMZN',
-				shares: '2',
-				value: '$' + '1896',
-				oneDayReturn: '46.30',
-				overallReturn: '56.36',
-				returnWithSells: '-7.11',
-				pricePerShare: '948.14',
-			},
-			{
-				symbol: 'APPL',
-				shares: '100',
-				value: '$' + '12100',
-				oneDayReturn: '600',
-				overallReturn: '1000',
-				returnWithSells: '500',
-				pricePerShare: '121',
-			},
-		],
-	};
+	state = { stocks: [] };
+
+	componentWillMount() {
+		const updateState = async () => {
+			let assets = await getAssets();
+			this.setState({
+				stocks: assets,
+			});
+		};
+
+		updateState();
+	}
 
 	// remove stocks from portfolio
-	removeStockHandler = (event, stockID) => {
+	removeStockHandler = async (event, stockID) => {
 		// create a copy of the current stock array in state (don't mutate the state)
 		const stateStocksCopy = [...this.state.stocks];
 
@@ -58,7 +46,7 @@ class StockList extends Component {
 	render() {
 		// array of JSX objects (one for each stock)
 		let allStocks = null;
-		allStocks = (
+		const showStocks = (
 			<div>
 				{this.state.stocks.map((curStock) => {
 					return (
@@ -83,7 +71,7 @@ class StockList extends Component {
 				<button>add stock (not working rn)</button>
 				<input type='text' value='enter stock symbol'></input>
 				This is a StockList. We might have one list for the portfolio, and another for a watchlist.
-				{allStocks}
+				{showStocks}
 			</div>
 		);
 	}
