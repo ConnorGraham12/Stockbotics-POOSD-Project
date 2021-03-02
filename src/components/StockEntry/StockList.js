@@ -20,12 +20,13 @@ class StockList extends Component {
       let stateCopy = [...this.state.stocks];
 
       // we run into issues if there are no stocks for the user
-      if (assets == null || assets.length == 0) {
+      if (assets == null) {
         stateCopy = [];
         stateCopy[0] = {
           symbol: "hardcoded placeholder",
         };
       } else {
+		assets = await getAssets();
         stateCopy = assets;
       }
 
