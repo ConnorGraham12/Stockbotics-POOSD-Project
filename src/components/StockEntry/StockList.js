@@ -27,23 +27,10 @@ function StockList() {
 		// create a copy of the current stock array in state (don't mutate the state)
 		const stateStocksCopy = [...stocks];
 
-<<<<<<< HEAD
 		// get the index of the stock we want to delete
 		const indexOfTarget = stateStocksCopy.findIndex((curStock) => {
 			return curStock.stockID == stockID;
 		});
-=======
-      // we run into issues if there are no stocks for the user
-      if (assets == null) {
-        stateCopy = [];
-        stateCopy[0] = {
-          symbol: "hardcoded placeholder",
-        };
-      } else {
-		assets = await getAssets();
-        stateCopy = assets;
-      }
->>>>>>> 17ccd64647c9354a695320caf2011baeb1a3d756
 
 		// remove the stock at that index
 		stateStocksCopy.splice(indexOfTarget, 1);
