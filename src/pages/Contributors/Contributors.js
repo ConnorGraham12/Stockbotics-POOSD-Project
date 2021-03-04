@@ -6,11 +6,11 @@ const Contributors = () => {
 	return (
 		/*<div>Contributors</div>*/
 		<div className='ContributorItems'>
-			<h1>Contributors</h1>
+			<h1>CONTRIBUTORS</h1>
 			<h2>Who we are</h2>
 			<p>
-				a group of dedicated college students working on a project in order to give everyone an opportunity to
-				get into investments without the risk of losing
+				A group of dedicated college students developing a project to give everyone an opportunity to
+				get into investment without the risk of losing.
 			</p>
 			<a className='Contributor-Link' href='https://github.com/jrm5399'>
 				John Murphy
