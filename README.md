@@ -131,4 +131,4 @@ Kirk Carmichael -
 
 Quinn Kildare - 
 
-Connor Graham - 
+Connor Graham - Updated and redeigned CSS style and further organized page layouts. Updated ReadMe. 
