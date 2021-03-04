@@ -123,7 +123,7 @@ Connor Graham - Recorded product demonstration video, edited readme.
 
 ## Task Allocation
 
-John Murphy - Updated ReadMe, Updated Velocity and BurnDown Chart.
+John Murphy - Updated ReadMe, Updated Velocity and BurnDown Chart, Created Windows .bat file to automatically run and terminate website.
 
 Clayton Patterson -
 
