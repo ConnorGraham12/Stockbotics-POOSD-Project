@@ -107,7 +107,7 @@ Kirk Carmichael - Dashboard now dynamically resizes based on stock portfolio. Ad
 
 Quinn Kildare - Fixed automated testing, updated trello board, setup backend server, added GET and POST requests for api calls.
 
-Connor Graham - Recorded product demosntration video, edited readme.
+Connor Graham - Recorded product demonstration video, edited readme.
 
 # Sprint 5
 
@@ -129,6 +129,6 @@ Clayton Patterson -
 
 Kirk Carmichael -
 
-Quinn Kildare - 
+Quinn Kildare - Added firebase functionality to the dashboard, Add/Remove stocks from user profile, dynamically update dashboard.
 
 Connor Graham - Updated and redeigned CSS style and further organized page layouts. Updated ReadMe. 
