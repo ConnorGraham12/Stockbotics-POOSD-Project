@@ -1,29 +1,18 @@
 import React from 'react';
 import './LoginButton.css';
 
-import firebase from '../../services/firebase';
+import firebase, { CreateUser } from '../../services/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 function LoginButton() {
 	const auth = firebase.auth();
 	const [user] = useAuthState(auth);
 
-	async function CreateUser() {
-		const profileExists = await firebase.firestore().collection('users').doc(auth.currentUser.uid).get().exists;
-		return (
-			!profileExists &&
-			firebase.firestore().collection('users').doc(auth.currentUser.uid).set({
-				title: auth.currentUser.displayName,
-				uid: auth.currentUser.uid,
-				assets: [],
-			})
-		);
-	}
-
 	function SignIn() {
-		const signInWithGoogle = () => {
+		const signInWithGoogle = async () => {
 			const provider = new firebase.auth.GoogleAuthProvider();
-			auth.signInWithPopup(provider);
+			await auth.signInWithPopup(provider);
+			CreateUser();
 		};
 		return (
 			<button className='login-button' onClick={signInWithGoogle}>
@@ -33,7 +22,6 @@ function LoginButton() {
 	}
 
 	function SignOut() {
-		CreateUser();
 		return (
 			auth.currentUser && (
 				<button className='login-button' onClick={() => auth.signOut()}>
