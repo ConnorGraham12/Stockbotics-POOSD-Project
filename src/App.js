@@ -10,7 +10,7 @@ import Contributors from './pages/Contributors/Contributors';
 import Dashboard from './pages/Dashboard/Dashboard';
 import LandingPage from './pages/LandingPage/LandingPage';
 import Error404 from './pages/Error404/Error404';
-import Pricing from './pages/Pricing';
+import Pricing from './pages/Pricing/Pricing';
 import About from './pages/About/About';
 
 // Components
