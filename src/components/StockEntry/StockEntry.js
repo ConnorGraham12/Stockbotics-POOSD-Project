@@ -1,5 +1,6 @@
 import React from "react";
 import DisplayBox from "../misc/DisplayBox.js";
+import getStockInfo from "../../services/backend";
 
 // a stock entry is a single row in the porfolio
 // it displays many different numbers
