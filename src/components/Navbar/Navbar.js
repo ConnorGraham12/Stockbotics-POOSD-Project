@@ -9,7 +9,7 @@ function Navbar(props) {
 		<nav className='NavbarItems'>
 			<h1 className='navbar-logo'>
 				<a href='/'>
-					Stockbotics<i className='fas fa-coins'></i>
+					Stockbotics <i className='fas fa-coins'></i>
 				</a>
 			</h1>
 			<div className='menu-icon'></div>

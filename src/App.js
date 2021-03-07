@@ -1,4 +1,4 @@
-import logo from './logo.png';
+
 import './App.css';
 
 import React from 'react';
@@ -6,10 +6,12 @@ import ReactDOM from 'react-dom';
 
 // Pages
 import Contributors from './pages/Contributors/Contributors';
+
 import Dashboard from './pages/Dashboard/Dashboard';
-import LandingPage from './pages/LandingPage';
+import LandingPage from './pages/LandingPage/LandingPage';
 import Error404 from './pages/Error404/Error404';
 import Pricing from './pages/Pricing';
+import About from './pages/About/About';
 
 // Components
 import Navbar from './components/Navbar/Navbar';
@@ -31,7 +33,7 @@ function App() {
 					</Route>
 
 					<Route path='/about'>
-						<LandingPage />
+						<About />
 					</Route>
 
 					<Route path='/contributors'>
