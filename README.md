@@ -118,7 +118,7 @@ Connor Graham - Recorded product demonstration video, edited readme.
 - [Burndown Chart](https://docs.google.com/document/d/1oTW-vdLHMnkZxa7HZg1x8DkUAS-b3znENmjIXKAASys/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
-- Product Demonstration
+- [Product Demonstration](https://www.youtube.com/watch?v=1EE5YXAg_VM)
 
 ## Task Allocation
 
