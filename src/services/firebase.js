@@ -19,27 +19,9 @@ export async function getAssets() {
 	return user.data().assets;
 }
 
-export async function removeAsset(assets) {
+export async function updateAssets(assets) {
 	const database = firebase.firestore();
 	const auth = firebase.auth();
-
-	if (!auth.currentUser) return;
-	const user = database.collection('users').doc(auth.currentUser.uid);
-	return user.update({ assets: assets });
-}
-
-export function addAsset(assets, symbol, shares) {
-	const database = firebase.firestore();
-	const auth = firebase.auth();
-	const indexOfTarget = assets.findIndex((curStock) => {
-		return curStock.symbol == symbol;
-	});
-	if (indexOfTarget == -1) assets.push({ symbol: symbol, shares: parseInt(shares) });
-	else {
-		var tempShares = parseInt(assets[indexOfTarget].shares);
-		tempShares += parseInt(shares);
-		assets[indexOfTarget].shares = parseInt(tempShares);
-	}
 
 	if (!auth.currentUser) return;
 	const user = database.collection('users').doc(auth.currentUser.uid);
