@@ -35,17 +35,19 @@ Stockbotics uses a Firebase login, which is able to encorporate a seemless trans
 
 # Business Rules
 
-Users need a valid gmail to sign up for StockBotics
-
-Team members shall properly allocate their time to working on the Agile Process and Programming
+The user should have a valid gmail, and password, in order to sign up for StockBotics
 
 Users data will be encrypyted via Firebase services
 
-Team members will be present weekly sprint meetings
+The user must be logged in to their account in order to purchase stocks on Stockbotics
 
-Team members will take turns being the Scrum master
+The user should be notified with important information regarding their stocks
 
-Work will be properly divided between team members
+The user should be able to refer other users to Stockbotics
+
+The user should be able to change their username
+
+The user will be suggested stocks based on their portfolio/interests
 
 ![Agile-Scrum-Process-2](https://user-images.githubusercontent.com/44210814/107902079-65540900-6f13-11eb-9ff4-a9fcc8d2423f.png)
 
