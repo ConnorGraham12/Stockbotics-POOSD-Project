@@ -126,8 +126,8 @@ John Murphy - Updated ReadMe, Updated Velocity and BurnDown Chart, Created Windo
 
 Clayton Patterson -
 
-Kirk Carmichael -
+Kirk Carmichael - Attempted to configure api calls and properly display information.
 
 Quinn Kildare - Added firebase functionality to the dashboard, Add/Remove stocks from user profile, dynamically update dashboard.
 
-Connor Graham - Updated and redeigned CSS style and further organized page layouts. Updated ReadMe. 
+Connor Graham - Updated and redeigned CSS style and further organized page layouts. Updated ReadMe.
