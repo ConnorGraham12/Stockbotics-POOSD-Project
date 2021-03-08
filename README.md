@@ -122,11 +122,11 @@ Connor Graham - Recorded product demonstration video, edited readme.
 
 ## Task Allocation
 
-John Murphy - Updated ReadMe, Updated Velocity and BurnDown Chart, Created Windows .bat file to automatically run and terminate website.
+John Murphy - Updated ReadMe, Updated Velocity and BurnDown Chart, Created Windows .bat file to automatically run and terminate website, created API test case calls.
 
 Clayton Patterson -
 
-Kirk Carmichael - Attempted to configure api calls and properly display information.
+Kirk Carmichael - Created API test calls for stock implementation.
 
 Quinn Kildare - Added firebase functionality to the dashboard, Add/Remove stocks from user profile, dynamically update dashboard.
 
