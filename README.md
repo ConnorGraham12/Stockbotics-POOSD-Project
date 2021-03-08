@@ -124,7 +124,7 @@ Connor Graham - Recorded product demonstration video, edited readme.
 
 John Murphy - Updated ReadMe, Updated Velocity and BurnDown Chart, Created Windows .bat file to automatically run and terminate website, created API test case calls.
 
-Clayton Patterson -
+Clayton Patterson - Updated Business Rules
 
 Kirk Carmichael - Created API test calls for stock implementation.
 
