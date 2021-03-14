@@ -72,18 +72,20 @@ function StockList() {
     );
   };
 
-  //};
-
-
+  function objectTester(name) {
+    getStockInfo(name).then((stock) => {
+      console.log(stock);
+    });
+  }
 
   return (
     <div>
       <button onClick={addStockHandler}>add stock</button>
-      <button onClick={console.log(getStockInfo("AMZN"))}>testicle</button>
+      <button onClick={objectTester("APPL")}>testicle</button>
       <input
         type="text"
         placeholder="stock symbol"
-		onInput={(e) => setSearchSymbol(e.target.value)}
+        onInput={(e) => setSearchSymbol(e.target.value)}
       ></input>
 
       <input
@@ -95,6 +97,6 @@ function StockList() {
       {showStocks()}
     </div>
   );
-  };
+}
 
 export default StockList;
