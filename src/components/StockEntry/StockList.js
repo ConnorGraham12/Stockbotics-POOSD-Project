@@ -4,6 +4,7 @@ import StockEntry from "./StockEntry.js";
 import { getAssets, removeAsset, addAsset } from "../../services/firebase";
 import firebase from "../../services/firebase";
 import getStockInfo from "../../services/backend";
+//import getStockInfo from "../../services/backend";
 // This should contain a chart comprised of stock entries
 // I think we should make the api call here and manage
 // state in this component
@@ -71,20 +72,20 @@ function StockList() {
     );
   };
 
-  const printStockTest = () => {
-    const stock = getStockInfo("AAPL");
-    console.log(stock);
-  };
+  //};
+
+
 
   return (
     <div>
       <button onClick={addStockHandler}>add stock</button>
-      <button onClick={printStockTest}>testing 1 2 3</button>
+      <button onClick={console.log(getStockInfo("AMZN"))}>testicle</button>
       <input
         type="text"
         placeholder="stock symbol"
-        onInput={(e) => setSearchSymbol(e.target.value)}
+		onInput={(e) => setSearchSymbol(e.target.value)}
       ></input>
+
       <input
         type="number"
         placeholder="number of shares"
@@ -94,6 +95,6 @@ function StockList() {
       {showStocks()}
     </div>
   );
-}
+  };
 
 export default StockList;

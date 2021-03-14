@@ -7,6 +7,7 @@ import getStockInfo from "../../services/backend";
 // each stock entry should have many display boxes
 // trying to decide if the stock entry should be dummy
 // component or not
+
 const StockEntry = (props) => {
   return (
     <div className="row">
