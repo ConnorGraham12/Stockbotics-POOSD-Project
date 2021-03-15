@@ -147,7 +147,7 @@ Connor Graham - Updated and redeigned CSS style and further organized page layou
 
 John Murphy - Built react components to reflect information from API calls.
 
-Clayton Patterson - 
+Clayton Patterson - Attempted to integrate a dark mode toggle, worked on formulating business rules. 
 
 Kirk Carmichael - Built react components to reflect information from API calls.
 
