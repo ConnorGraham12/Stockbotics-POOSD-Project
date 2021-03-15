@@ -54,34 +54,28 @@ function StockList() {
     ) : (
       <div>
         {stocks.map((curStock) => {
-          return (
-            <StockEntry
-              key={curStock.symbol}
-              symbol={curStock.symbol}
-              shares={curStock.shares}
-              value={curStock.value}
-              oneDayReturn={curStock.oneDayReturn}
-              overallReturn={curStock.overallReturn}
-              returnWithSells={curStock.returnWithSells}
-              pricePerShare={curStock.pricePerShare}
-              remove={(event) => removeStockHandler(event, curStock.symbol)}
-            />
-          );
+          return createStockEntry(curStock);
         })}
       </div>
     );
   };
 
-  function objectTester(name) {
-    getStockInfo(name).then((stock) => {
-      console.log(stock);
+  // returns a StockEntry with correct information from api call
+  function createStockEntry(curStock) {
+    // get the fields for the stock
+    getStockInfo(curStock.symbol).then((stock) => {
+      return (
+        <StockEntry
+          key={stock.price.symbol}
+          remove={(event) => removeStockHandler(event, curStock.symbol)}
+        />
+      );
     });
   }
 
   return (
     <div>
       <button onClick={addStockHandler}>add stock</button>
-      <button onClick={objectTester("APPL")}>testicle</button>
       <input
         type="text"
         placeholder="stock symbol"

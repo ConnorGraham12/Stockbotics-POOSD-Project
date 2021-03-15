@@ -12,13 +12,7 @@ const StockEntry = (props) => {
   return (
     <div className="row">
       <h4>Gotta figure out api calls</h4>
-      <DisplayBox info={props.symbol} />
-      <DisplayBox info={props.shares} />
-      <DisplayBox info={props.value} />
-      <DisplayBox info={props.oneDayReturn} />
-      <DisplayBox info={props.overallReturn} />
-      <DisplayBox info={props.returnWithSells} />
-      <DisplayBox info={props.pricePerShare} />
+      <DisplayBox info={props.key} />
       <button onClick={props.remove}>click to remove stonk</button>
     </div>
   );
