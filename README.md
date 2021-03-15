@@ -145,11 +145,11 @@ Connor Graham - Updated and redeigned CSS style and further organized page layou
 
 ## Task Allocation
 
-John Murphy - Updated ReadMe.
+John Murphy - Built react components to reflect information from API calls.
 
 Clayton Patterson - 
 
-Kirk Carmichael - 
+Kirk Carmichael - Built react components to reflect information from API calls.
 
 Quinn Kildare - 
 
