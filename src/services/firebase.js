@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const config = require('../config.json');
 
@@ -14,9 +15,10 @@ export async function getAssets() {
 	const database = firebase.firestore();
 	const auth = firebase.auth();
 
-	if (!auth.currentUser) return;
-	const user = await database.collection('users').doc(auth.currentUser.uid).get();
-	return user.data().assets;
+	if (auth.currentUser == null) return;
+	const document = await database.collection('users').doc(auth.currentUser.uid).get();
+	if (document.exists) return document.data().assets;
+	else return [];
 }
 
 export async function updateAssets(assets) {
