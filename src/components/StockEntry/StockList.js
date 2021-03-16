@@ -63,14 +63,16 @@ function StockList() {
   // returns a StockEntry with correct information from api call
   function createStockEntry(curStock) {
     // get the fields for the stock
+    let component = null;
     getStockInfo(curStock.symbol).then((stock) => {
-      return (
+      component = (
         <StockEntry
           key={stock.price.symbol}
           remove={(event) => removeStockHandler(event, curStock.symbol)}
         />
       );
     });
+    return component;
   }
 
   return (
