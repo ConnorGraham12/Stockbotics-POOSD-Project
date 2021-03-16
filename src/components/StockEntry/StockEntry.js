@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useState, useEffect } from "react";
 import DisplayBox from "../misc/DisplayBox.js";
 import getStockInfo from "../../services/backend";
 
@@ -9,11 +9,26 @@ import getStockInfo from "../../services/backend";
 // component or not
 
 const StockEntry = (props) => {
+  // state manages information about a particular stock
+  const [stockObject, setStockObject] = useState({});
+
+  useEffect(() => {
+    getStockInfo(props.symbol).then(
+      (stock) => {
+        setStockObject(stock);
+      },
+      () => {
+        console.log("problem");
+      }
+    );
+  }, []);
+
   return (
     <div className="row">
       <h4>Gotta figure out api calls</h4>
-      <DisplayBox info={props.key} />
+      {/* <DisplayBox info={stockObject.price.symbol} /> */}
       <button onClick={props.remove}>click to remove stonk</button>
+      <button onClick={console.log(stockObject)}>click to display</button>
     </div>
   );
 };

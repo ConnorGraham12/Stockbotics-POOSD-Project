@@ -54,26 +54,17 @@ function StockList() {
     ) : (
       <div>
         {stocks.map((curStock) => {
-          return createStockEntry(curStock);
+          return (
+            <StockEntry
+              key={curStock.symbol}
+              symbol={"AMZN"}
+              remove={removeStockHandler}
+            />
+          );
         })}
       </div>
     );
   };
-
-  // returns a StockEntry with correct information from api call
-  function createStockEntry(curStock) {
-    // get the fields for the stock
-    let component = null;
-    getStockInfo(curStock.symbol).then((stock) => {
-      component = (
-        <StockEntry
-          key={stock.price.symbol}
-          remove={(event) => removeStockHandler(event, curStock.symbol)}
-        />
-      );
-    });
-    return component;
-  }
 
   return (
     <div>
@@ -91,6 +82,11 @@ function StockList() {
       ></input>
       {/* This is a StockList. We might have one list for the portfolio, and another for a watchlist. */}
       {showStocks()}
+      <StockEntry
+        key={"AMZN"}
+        symbol={"AMZN"}
+        remove={removeStockHandler}
+      ></StockEntry>
     </div>
   );
 }
