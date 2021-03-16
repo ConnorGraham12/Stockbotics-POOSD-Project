@@ -153,4 +153,4 @@ Kirk Carmichael - Built react components to reflect information from API calls.
 
 Quinn Kildare - 
 
-Connor Graham - 
+Connor Graham - Fixed CSS resizabilty Issues and improved readability for dark mode implimentation, updated ReadMe
