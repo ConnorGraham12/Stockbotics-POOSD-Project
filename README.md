@@ -138,14 +138,14 @@ Connor Graham - Updated and redeigned CSS style and further organized page layou
 - [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
 - [Source Code](https://github.com/ConnorGraham12/POOSD-Project/tree/main/src)
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
-- Burndown Chart
+- [Burndown Chart](https://docs.google.com/document/d/1YDkda8mmH8nBVVytBrzhfSdqJP20J8D6Yza3Q01lS1M/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
 - Product Demonstration
 
 ## Task Allocation
 
-John Murphy - Built react components to reflect information from API calls.
+John Murphy - Built react components to reflect information from API calls, Updated Velocity Chart, Burndown Chart, and Trello board.
 
 Clayton Patterson - Attempted to integrate a dark mode toggle, worked on formulating business rules. 
 
