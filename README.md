@@ -151,6 +151,6 @@ Clayton Patterson - Attempted to integrate a dark mode toggle, worked on formula
 
 Kirk Carmichael - Built react components to reflect information from API calls.
 
-Quinn Kildare - 
+Quinn Kildare - Implement asynchrounous API calls for stock information, Fixed login bug on dashboard, dynamically update user information.
 
 Connor Graham - Fixed CSS resizabilty Issues and improved readability for dark mode implimentation, updated ReadMe
