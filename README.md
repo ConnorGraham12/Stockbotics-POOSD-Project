@@ -141,7 +141,7 @@ Connor Graham - Updated and redeigned CSS style and further organized page layou
 - [Burndown Chart](https://docs.google.com/document/d/1YDkda8mmH8nBVVytBrzhfSdqJP20J8D6Yza3Q01lS1M/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
-- Product Demonstration
+- [Product Demonstration](https://youtu.be/CrMBbQrnAPU)
 
 ## Task Allocation
 
