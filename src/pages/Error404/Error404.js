@@ -9,7 +9,6 @@ const Error404 = () => {
 			<p> We can't find the page you're looking for.</p>
 			<a href='/'> Go back home</a>
 		</div>
-
 	);
 };
 

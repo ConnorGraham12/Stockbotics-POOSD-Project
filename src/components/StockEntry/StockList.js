@@ -13,7 +13,12 @@ function StockList() {
 	const [stocks, setStocks] = useState([]);
 	const [searchSymbol, setSearchSymbol] = useState('');
 	const [addedShares, setAddedShares] = useState(0);
-	const [isLoading, setIsLoading] = useState(true);
+	const [accountValue, setAccountValue] = useState(0);
+
+	const passAccountValue = (price) => {
+		setAccountValue(accountValue + price);
+		console.log(accountValue);
+	};
 
 	useEffect(() => {
 		firebase.auth().onAuthStateChanged((user) => {
@@ -21,10 +26,9 @@ function StockList() {
 				getAssets().then((assets) => {
 					setStocks(assets);
 				});
-				setIsLoading(false);
 			}
 		});
-	}, []);
+	});
 
 	// remove stocks from portfolio
 	const removeStockHandler = async (event, stockID) => {
@@ -68,9 +72,9 @@ function StockList() {
 	let allStocks = null;
 	const showStocks = () => {
 		return !stocks || stocks.length == 0 ? (
-			<div>You don't have any stocks... maybe you should add one...</div>
+			<div className='Stock-Items'>You don't have any stocks... maybe you should add one...</div>
 		) : (
-			<div>
+			<div className='Stock-Items'>
 				{stocks.map((curStock) => {
 					return (
 						<StockEntry
@@ -78,6 +82,7 @@ function StockList() {
 							symbol={curStock.symbol}
 							shares={curStock.shares}
 							remove={(event) => removeStockHandler(event, curStock.symbol)}
+							sendValue={passAccountValue}
 						/>
 					);
 				})}
@@ -85,16 +90,23 @@ function StockList() {
 		);
 	};
 
-	return firebase.auth().currentUser && !isLoading ? (
-		<div>
-			<button onClick={addStockHandler}>add stock</button>
-			<input type='text' placeholder='stock symbol' onInput={(e) => setSearchSymbol(e.target.value)}></input>
-			<input type='number' placeholder='number of shares' onInput={(e) => setAddedShares(e.target.value)}></input>
+	return firebase.auth().currentUser ? (
+		<div className='StockListItems'>
+			<h1>My Dashboard</h1>
+			<div className='Spacing'>
+				<button onClick={addStockHandler}>add stock</button>
+				<input type='text' placeholder='stock symbol' onInput={(e) => setSearchSymbol(e.target.value)}></input>
+				<input
+					type='number'
+					placeholder='number of shares'
+					onInput={(e) => setAddedShares(e.target.value)}
+				></input>
+			</div>
 			{/* This is a StockList. We might have one list for the portfolio, and another for a watchlist. */}
 			{showStocks()}
 		</div>
 	) : (
-		<div>Please sign in</div>
+		<div className='StockListItems'>Please sign in</div>
 	);
 }
 

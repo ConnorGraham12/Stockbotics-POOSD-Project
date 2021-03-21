@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import './Contributors.css';
 
 const Contributors = () => {
@@ -9,8 +8,8 @@ const Contributors = () => {
 			<h1>CONTRIBUTORS</h1>
 			<h2>Who we are</h2>
 			<p>
-				A group of dedicated college students developing a project to give everyone an opportunity to
-				get into investment without the risk of losing.
+				A group of dedicated college students developing a project to give everyone an opportunity to get into
+				investment without the risk of losing.
 			</p>
 			<a className='Contributor-Link' href='https://github.com/jrm5399'>
 				John Murphy

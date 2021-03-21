@@ -1,0 +1,32 @@
+.DashboardItems {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	height: 85vh;
+}
+
+.Asset-List {
+	min-width: 58vw;
+	max-width: 58vw;
+}
+
+.Profile-Info {
+	justify-content: center;
+	float: right;
+	width: 28vw;
+}
+
+.Chart {
+	color: black;
+	margin-top: 5%;
+	height: 45%;
+	background-color: antiquewhite;
+}
+
+.Data {
+	color: black;
+	margin-top: 5%;
+	height: 45%;
+	background-color: aqua;
+}
