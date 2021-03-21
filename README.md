@@ -154,3 +154,27 @@ Kirk Carmichael - Built react components to reflect information from API calls.
 Quinn Kildare - Implement asynchrounous API calls for stock information, Fixed login bug on dashboard, dynamically update user information.
 
 Connor Graham - Fixed CSS resizabilty Issues and improved readability for dark mode implimentation, updated ReadMe
+
+# Sprint 7
+
+- [Product Backlog, Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
+- [Source Code](https://github.com/ConnorGraham12/POOSD-Project/tree/main/src)
+- [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
+- Burndown Chart
+- [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
+- [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
+- Product Demonstration
+
+## Task Allocation
+
+John Murphy - 
+
+Clayton Patterson - 
+
+Kirk Carmichael - 
+
+Quinn Kildare - 
+
+Connor Graham -
+
