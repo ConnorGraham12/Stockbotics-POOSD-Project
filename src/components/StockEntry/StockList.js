@@ -13,14 +13,22 @@ function StockList() {
 	const [stocks, setStocks] = useState([]);
 	const [searchSymbol, setSearchSymbol] = useState('');
 	const [addedShares, setAddedShares] = useState(0);
+	const [accountValue, setAccountValue] = useState(0);
+
+	const passAccountValue = (price) => {
+		setAccountValue(accountValue + price);
+		console.log(accountValue);
+	};
 
 	useEffect(() => {
-		firebase.auth().onAuthStateChanged(() => {
-			getAssets().then((assets) => {
-				setStocks(assets);
-			});
+		firebase.auth().onAuthStateChanged((user) => {
+			if (user) {
+				getAssets().then((assets) => {
+					setStocks(assets);
+				});
+			}
 		});
-	}, []);
+	});
 
 	// remove stocks from portfolio
 	const removeStockHandler = async (event, stockID) => {
@@ -40,41 +48,41 @@ function StockList() {
 
 	// add stocks to the portfolio
 	const addStockHandler = () => {
+		if (searchSymbol == '' || addedShares == 0) return alert('PLEASE INPUT A SYMBOL/SHARE AMOUNT');
 		const stateStocksCopy = [...stocks];
-        
-        const indexOfTarget = stateStocksCopy.findIndex((curStock) => {
+
+		const indexOfTarget = stateStocksCopy.findIndex((curStock) => {
 			return curStock.symbol == searchSymbol;
 		});
 
-        if (indexOfTarget == -1) stateStocksCopy.push({ symbol: searchSymbol, shares: parseInt(addedShares) });
-	    else {
-		    var tempShares = parseInt(stateStocksCopy[indexOfTarget].shares);
-		    tempShares += parseInt(addedShares);
-		    stateStocksCopy[indexOfTarget].shares = parseInt(tempShares);
-	    }
-
-		updateAssets(stateStocksCopy);
-		setStocks(stateStocksCopy);
+		if (indexOfTarget == -1) stateStocksCopy.push({ symbol: searchSymbol, shares: parseInt(addedShares) });
+		else {
+			var tempShares = parseInt(stateStocksCopy[indexOfTarget].shares);
+			tempShares += parseInt(addedShares);
+			stateStocksCopy[indexOfTarget].shares = parseInt(tempShares);
+		}
+		getStockInfo(searchSymbol).then((ret) => {
+			if (ret) {
+				updateAssets(stateStocksCopy);
+				setStocks(stateStocksCopy);
+			}
+		});
 	};
 	// array of JSX objects (one for each stock)
 	let allStocks = null;
 	const showStocks = () => {
-		return !stocks ? (
-			<div>You don't have any stocks... maybe you should add one...</div>
+		return !stocks || stocks.length == 0 ? (
+			<div className='Stock-Items'>You don't have any stocks... maybe you should add one...</div>
 		) : (
-			<div>
+			<div className='Stock-Items'>
 				{stocks.map((curStock) => {
 					return (
 						<StockEntry
 							key={curStock.symbol}
 							symbol={curStock.symbol}
 							shares={curStock.shares}
-							value={curStock.value}
-							oneDayReturn={curStock.oneDayReturn}
-							overallReturn={curStock.overallReturn}
-							returnWithSells={curStock.returnWithSells}
-							pricePerShare={curStock.pricePerShare}
 							remove={(event) => removeStockHandler(event, curStock.symbol)}
+							sendValue={passAccountValue}
 						/>
 					);
 				})}
@@ -82,14 +90,23 @@ function StockList() {
 		);
 	};
 
-	return (
-		<div>
-			<button onClick={addStockHandler}>add stock</button>
-			<input type='text' placeholder='stock symbol' onInput={(e) => setSearchSymbol(e.target.value)}></input>
-			<input type='number' placeholder='number of shares' onInput={(e) => setAddedShares(e.target.value)}></input>
+	return firebase.auth().currentUser ? (
+		<div className='StockListItems'>
+			<h1>My Dashboard</h1>
+			<div className='Spacing'>
+				<button onClick={addStockHandler}>add stock</button>
+				<input type='text' placeholder='stock symbol' onInput={(e) => setSearchSymbol(e.target.value)}></input>
+				<input
+					type='number'
+					placeholder='number of shares'
+					onInput={(e) => setAddedShares(e.target.value)}
+				></input>
+			</div>
 			{/* This is a StockList. We might have one list for the portfolio, and another for a watchlist. */}
 			{showStocks()}
 		</div>
+	) : (
+		<div className='StockListItems'>Please sign in</div>
 	);
 }
 

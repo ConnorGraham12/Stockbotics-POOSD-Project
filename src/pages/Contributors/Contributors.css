@@ -27,33 +27,33 @@
 	color: white;
     font-size: 55px;
 }
-.ContributorItems h2{
+.ContributorItems h2 {
 	color: white;
-    font-size: 30px;
+	font-size: 30px;
 }
-.ContributorItems p{
+.ContributorItems p {
 	color: white;
-    width: 25vw;
-    font-size: 25px;
+	width: 25vw;
+	font-size: 25px;
 }
 
 .Contributor-Link {
 	font-size: x-large;
-    display:inline-block;
-    padding:0.35em .5em;
-    border:0.1em solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font: weight 10px;
-    color:#FFFFFF;
-    text-align:center;
-    transition: all 0.2s;
+	display: inline-block;
+	padding: 0.35em 0.5em;
+	border: 0.1em solid #ffffff;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font: weight 10px;
+	color: #ffffff;
+	text-align: center;
+	transition: all 0.2s;
 }
 
 .Contributor-Link:hover {
-    color:#000000;
-    background-color:#FFFFFF;
+	color: #000000;
+	background-color: #ffffff;
 }

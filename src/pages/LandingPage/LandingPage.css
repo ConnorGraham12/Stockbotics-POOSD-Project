@@ -1,15 +1,15 @@
 .Landing {
-   background-image: url('./LandingImage.jpg');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
-   display: flex;
-   justify-content:  center;
-   flex-direction: column;
-   align-items: center;
-   min-height: 85vh;
-   font-size: calc(10px + 2vmin);
+	background-image: url('./LandingImage.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	min-height: 85vh;
+	font-size: calc(10px + 2vmin);
 }
 
 
@@ -17,19 +17,16 @@
 .bg{
 
     background: #282c34;
-    
-
 }
 .Landing-header {
-    color: white;
-    flex-basis: 100%;
-    font-family:'Roboto',sans-serif;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 600;
-    font-size: 80px;
-    width: 30vw;
-    
+	color: white;
+	flex-basis: 100%;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 600;
+	font-size: 80px;
+	width: 30vw;
 }
 
 @media (max-width: 1250px) {
@@ -41,43 +38,40 @@
 }
 
 .Landing-header:hover {
-    color:rgb(158, 154, 154);
-    transition: all 0.2s;
+	color: rgb(158, 154, 154);
+	transition: all 0.2s;
 }
 
 .Landing-p {
-    color: white;
-    width: 25vw;
-    font-family:'Roboto',sans-serif;
-    font-size: 20px;
-    
+	color: white;
+	width: 25vw;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
 }
 
-.divider{
-    width: 5px;
-    height: auto;
-    display: inline-block;
-
+.divider {
+	width: 5px;
+	height: auto;
+	display: inline-block;
 }
 
 .Landing-p a {
-    font-size: x-large;
-    display:inline-block;
-    padding:0.35em .5em;
-    border:0.1em solid #FFFFFF;
-    margin:0 0.3em 0.3em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font: weight 10px;
-    color:#FFFFFF;
-    text-align:center;
-    transition: all 0.2s;
-    
+	font-size: x-large;
+	display: inline-block;
+	padding: 0.35em 0.5em;
+	border: 0.1em solid #ffffff;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font: weight 10px;
+	color: #ffffff;
+	text-align: center;
+	transition: all 0.2s;
 }
 
 .Landing-p a:hover {
-    color:#000000;
-    background-color:#FFFFFF;
+	color: #000000;
+	background-color: #ffffff;
 }
