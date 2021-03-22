@@ -4,6 +4,8 @@ import StockEntry from './StockEntry.js';
 import { getAssets, updateAssets } from '../../services/firebase';
 import firebase from '../../services/firebase';
 import getStockInfo from '../../services/backend';
+import { Scrollbars } from 'react-custom-scrollbars';
+
 // This should contain a chart comprised of stock entries
 // I think we should make the api call here and manage
 // state in this component
@@ -75,17 +77,19 @@ function StockList() {
 			<div className='Stock-Items'>You don't have any stocks... maybe you should add one...</div>
 		) : (
 			<div className='Stock-Items'>
-				{stocks.map((curStock) => {
-					return (
-						<StockEntry
-							key={curStock.symbol}
-							symbol={curStock.symbol}
-							shares={curStock.shares}
-							remove={(event) => removeStockHandler(event, curStock.symbol)}
-							sendValue={passAccountValue}
-						/>
-					);
-				})}
+				<Scrollbars>
+					{stocks.map((curStock) => {
+						return (
+							<StockEntry
+								key={curStock.symbol}
+								symbol={curStock.symbol}
+								shares={curStock.shares}
+								remove={(event) => removeStockHandler(event, curStock.symbol)}
+								sendValue={passAccountValue}
+							/>
+						);
+					})}
+				</Scrollbars>
 			</div>
 		);
 	};
