@@ -4,13 +4,28 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	min-height: 75vh;
+	
+    height: 80vh;
+    width: auto;
 }
 
-.ContributorItems h1 {
-	color: white;
+@media (max-width: 1800px) {
+    .ContributorItems {
+      flex-direction: row;
+      
 
-	font-size: 55px;
+    }
+   
+    .Contributor-Link {
+        flex-direction: column;    
+    }
+
+  }
+
+
+.ContributorItems h1{
+	color: white;
+    font-size: 55px;
 }
 .ContributorItems h2 {
 	color: white;

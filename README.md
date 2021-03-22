@@ -122,7 +122,7 @@ Connor Graham - Recorded product demonstration video, edited readme.
 
 ## Task Allocation
 
-John Murphy - Updated ReadMe, Updated Velocity and BurnDown Chart, Created Windows .bat file to automatically run and terminate website, created API test case calls.
+John Murphy - Updated ReadMe,Updated Trello Board, Updated Velocity and BurnDown Chart, Created Windows .bat file to automatically run and terminate website, created API test case calls.
 
 Clayton Patterson - Updated Business Rules
 
@@ -131,3 +131,50 @@ Kirk Carmichael - Created API test calls for stock implementation.
 Quinn Kildare - Added firebase functionality to the dashboard, Add/Remove stocks from user profile, dynamically update dashboard.
 
 Connor Graham - Updated and redeigned CSS style and further organized page layouts. Updated ReadMe.
+
+# Sprint 6
+
+- [Product Backlog, Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
+- [Source Code](https://github.com/ConnorGraham12/POOSD-Project/tree/main/src)
+- [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
+- [Burndown Chart](https://docs.google.com/document/d/1YDkda8mmH8nBVVytBrzhfSdqJP20J8D6Yza3Q01lS1M/edit?usp=sharing)
+- [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
+- [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
+- [Product Demonstration](https://youtu.be/CrMBbQrnAPU)
+
+## Task Allocation
+
+John Murphy - Built react components to reflect information from API calls, Updated Velocity Chart, Burndown Chart, and Trello board.
+
+Clayton Patterson - Attempted to integrate a dark mode toggle, worked on formulating business rules. 
+
+Kirk Carmichael - Built react components to reflect information from API calls.
+
+Quinn Kildare - Implement asynchrounous API calls for stock information, Fixed login bug on dashboard, dynamically update user information.
+
+Connor Graham - Fixed CSS resizabilty Issues and improved readability for dark mode implimentation, updated ReadMe
+
+# Sprint 7
+
+- [Product Backlog, Sprint Backlog](https://trello.com/b/RJRgVrSx/agile-sprint-board)
+- [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
+- [Source Code](https://github.com/ConnorGraham12/POOSD-Project/tree/main/src)
+- [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
+- Burndown Chart
+- [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
+- [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
+- Product Demonstration
+
+## Task Allocation
+
+John Murphy - 
+
+Clayton Patterson - 
+
+Kirk Carmichael - 
+
+Quinn Kildare - 
+
+Connor Graham -
+

@@ -5,12 +5,15 @@ const Contributors = () => {
 	return (
 		/*<div>Contributors</div>*/
 		<div className='ContributorItems'>
+			<div classname='box1'>
 			<h1>CONTRIBUTORS</h1>
 			<h2>Who we are</h2>
 			<p>
 				A group of dedicated college students developing a project to give everyone an opportunity to get into
 				investment without the risk of losing.
 			</p>
+			</div>
+		<div classname='Links'>
 			<a className='Contributor-Link' href='https://github.com/jrm5399'>
 				John Murphy
 			</a>
@@ -30,6 +33,7 @@ const Contributors = () => {
 			<a className='Contributor-Link' href='https://github.com/ClaytonPatterson33'>
 				Clayton Patterson
 			</a>
+			</div>
 		</div>
 	);
 };
