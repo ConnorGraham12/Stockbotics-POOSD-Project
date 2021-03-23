@@ -26,6 +26,17 @@ function StockList(props) {
 		});
 	});
 
+	useEffect(() => {
+		//props.setAccountValue(0);
+		stocks.map((asset) => {
+			getStockInfo(asset.symbol).then((ret) => {
+				if (ret) {
+					props.updateAccountValue(ret.price.regularMarketPrice * addedShares);
+				}
+			});
+		});
+	});
+
 	// remove stocks from portfolio
 	const removeStockHandler = async (event, stockID) => {
 		// create a copy of the current stock array in state (don't mutate the state)
@@ -47,7 +58,7 @@ function StockList(props) {
 		if (searchSymbol == '' || addedShares == 0) return alert('PLEASE INPUT A SYMBOL/SHARE AMOUNT');
 		const stateStocksCopy = [...stocks];
 
-		const indexOfTarget = stateStocksCopy.findIndex((curStock) => {
+		let indexOfTarget = stateStocksCopy.findIndex((curStock) => {
 			return curStock.symbol == searchSymbol;
 		});
 
@@ -59,6 +70,7 @@ function StockList(props) {
 		}
 		getStockInfo(searchSymbol).then((ret) => {
 			if (ret) {
+				//if (indexOfTarget != -1) props.updateAccountValue(ret.price.regularMarketPrice * addedShares);
 				updateAssets(stateStocksCopy);
 				setStocks(stateStocksCopy);
 			}

@@ -13,10 +13,11 @@ const Dashboard = () => {
       <div className="DashboardItems">
         <StockList
           className="Asset-List"
+          setAccountValue={setAccountValue}
           updateAccountValue={updateAccountValue}
         />
         <div className="Profile-Info">
-          <div className="Chart"></div>
+          <div className="Chart">A BIG OL CHART BABY</div>
           <div className="Data">
             <p>This is where data will go about value, etc.</p>
             <p>Account Value: {accountValue}</p>
