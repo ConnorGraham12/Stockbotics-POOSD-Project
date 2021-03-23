@@ -19,14 +19,18 @@ const StockEntry = (props) => {
 			if (isMounted) {
 				setStockInfo({ price: info.price });
 				// console.log('EXPECTED: ' + info.price.regularMarketPrice * props.shares)
-				props.changeAccountValue(info.price.regularMarketPrice * props.shares);
+				//props.changeAccountValue(info.price.regularMarketPrice * props.shares);
 				setIsBusy(false);
 			}
 		});
 		return () => {
 			isMounted = false;
 		};
-	}, []);
+	}, [stockInfo.price.regularMarketPrice, props.shares]);
+
+	// useEffect(() => {
+	// 	if (!isBusy) props.changeAccountValue(stockInfo.price.regularMarketPrice * props.numAdded);
+	// }, [props.shares]);
 
 	return isBusy ? (
 		<div></div>

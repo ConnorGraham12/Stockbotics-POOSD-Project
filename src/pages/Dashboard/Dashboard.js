@@ -11,7 +11,11 @@ const Dashboard = () => {
 	return (
 		<div>
 			<div className='DashboardItems'>
-				<StockList className='Asset-List' updateAccountValue={updateAccountValue} />
+				<StockList
+					className='Asset-List'
+					setAccountValue={setAccountValue}
+					updateAccountValue={updateAccountValue}
+				/>
 				<div className='Profile-Info'>
 					<div className='Chart'>A BIG OL CHART BABY</div>
 					<div className='Data'>
