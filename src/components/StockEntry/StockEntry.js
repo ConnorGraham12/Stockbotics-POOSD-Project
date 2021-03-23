@@ -12,12 +12,20 @@ const StockEntry = (props) => {
 	const [stockInfo, setStockInfo] = useState({ price: [] });
 	const [isBusy, setIsBusy] = useState(true);
 
-	useEffect(async () => {
-		let info = await getStockInfo(props.symbol);
-		setStockInfo({ price: info.price });
-		console.log('EXPECTED: ' + stockInfo.price.regularMarketPrice * props.shares);
-		props.sendValue(stockInfo.price.regularMarketPrice * props.shares);
-		setIsBusy(false);
+	useEffect(() => {
+		let isMounted = true;
+
+		getStockInfo(props.symbol).then((info) => {
+			if (isMounted) {
+				setStockInfo({ price: info.price });
+				// console.log('EXPECTED: ' + info.price.regularMarketPrice * props.shares)
+				props.changeAccountValue(info.price.regularMarketPrice * props.shares);
+				setIsBusy(false);
+			}
+		});
+		return () => {
+			isMounted = false;
+		};
 	}, []);
 
 	return isBusy ? (
@@ -39,7 +47,7 @@ const StockEntry = (props) => {
 			</div>
 
 			<button className='trash' onClick={props.remove}>
-				<i class='fa fa-trash' aria-hidden='true'></i>
+				<i className='fa fa-trash' aria-hidden='true'></i>
 			</button>
 		</div>
 	);

@@ -10,17 +10,11 @@ import { Scrollbars } from 'react-custom-scrollbars';
 // I think we should make the api call here and manage
 // state in this component
 
-function StockList() {
+function StockList(props) {
 	// this is the state of the StockList
 	const [stocks, setStocks] = useState([]);
 	const [searchSymbol, setSearchSymbol] = useState('');
 	const [addedShares, setAddedShares] = useState(0);
-	const [accountValue, setAccountValue] = useState(0);
-
-	const passAccountValue = (price) => {
-		setAccountValue(accountValue + price);
-		console.log(accountValue);
-	};
 
 	useEffect(() => {
 		firebase.auth().onAuthStateChanged((user) => {
@@ -79,13 +73,14 @@ function StockList() {
 			<div className='Stock-Items'>
 				<Scrollbars>
 					{stocks.map((curStock) => {
+						// console.log(accountValue);
 						return (
 							<StockEntry
 								key={curStock.symbol}
 								symbol={curStock.symbol}
 								shares={curStock.shares}
 								remove={(event) => removeStockHandler(event, curStock.symbol)}
-								sendValue={passAccountValue}
+								changeAccountValue={props.updateAccountValue}
 							/>
 						);
 					})}
