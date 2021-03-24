@@ -164,17 +164,17 @@ Connor Graham - Fixed CSS resizabilty Issues and improved readability for dark m
 - Burndown Chart
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
-- Product Demonstration
+- [Product Demonstration](https://www.youtube.com/watch?v=ov7eZsnmaxc)
 
 ## Task Allocation
 
-John Murphy - 
+John Murphy - Started chart implimentation, assisted in updating account values. 
 
-Clayton Patterson - 
+Clayton Patterson - Continued work on dark mode toggle
 
-Kirk Carmichael - 
+Kirk Carmichael - Started chart implementation, fixed infinite post requests bug. 
 
-Quinn Kildare - 
+Quinn Kildare - Refactored stock list and stock entry and dynamically updated account values.  
 
-Connor Graham -
+Connor Graham - traced and fixed bug where prices were being double updated. Updated trello. 
 
