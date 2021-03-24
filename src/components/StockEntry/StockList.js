@@ -15,27 +15,29 @@ function StockList(props) {
 	const [stocks, setStocks] = useState([]);
 	const [searchSymbol, setSearchSymbol] = useState('');
 	const [addedShares, setAddedShares] = useState(0);
+	const [isLoading, setIsLoading] = useState(true);
 
-	useEffect(() => {
-		firebase.auth().onAuthStateChanged((user) => {
-			if (user) {
-				getAssets().then((assets) => {
+	useEffect(async () => {
+		if (isLoading)
+			firebase.auth().onAuthStateChanged(async (user) => {
+				if (user) {
+					var assets = await getAssets();
 					setStocks(assets);
-				});
-			}
-		});
+				}
+				setIsLoading(false);
+			});
 	});
 
 	useEffect(() => {
-		//props.setAccountValue(0);
-		stocks.map((asset) => {
-			getStockInfo(asset.symbol).then((ret) => {
-				if (ret) {
-					props.updateAccountValue(ret.price.regularMarketPrice * addedShares);
-				}
+		if (!isLoading) {
+			let accountValue = 0;
+			stocks.map((asset) => {
+				//console.log(asset.info.regularMarketPrice * asset.shares);
+				accountValue += asset.shares * asset.info.regularMarketPrice;
 			});
-		});
-	});
+			props.setAccountValue(accountValue);
+		}
+	}, [stocks]);
 
 	// remove stocks from portfolio
 	const removeStockHandler = async (event, stockID) => {
@@ -54,27 +56,26 @@ function StockList(props) {
 	};
 
 	// add stocks to the portfolio
-	const addStockHandler = () => {
+	const addStockHandler = async () => {
 		if (searchSymbol == '' || addedShares == 0) return alert('PLEASE INPUT A SYMBOL/SHARE AMOUNT');
 		const stateStocksCopy = [...stocks];
 
 		let indexOfTarget = stateStocksCopy.findIndex((curStock) => {
 			return curStock.symbol == searchSymbol;
 		});
-
-		if (indexOfTarget == -1) stateStocksCopy.push({ symbol: searchSymbol, shares: parseInt(addedShares) });
-		else {
-			var tempShares = parseInt(stateStocksCopy[indexOfTarget].shares);
-			tempShares += parseInt(addedShares);
-			stateStocksCopy[indexOfTarget].shares = parseInt(tempShares);
-		}
-		getStockInfo(searchSymbol).then((ret) => {
-			if (ret) {
-				//if (indexOfTarget != -1) props.updateAccountValue(ret.price.regularMarketPrice * addedShares);
-				updateAssets(stateStocksCopy);
-				setStocks(stateStocksCopy);
+		var info = await getStockInfo(searchSymbol);
+		if (info) {
+			if (indexOfTarget == -1)
+				stateStocksCopy.push({ symbol: searchSymbol, shares: parseInt(addedShares), info: info.price });
+			else {
+				var tempShares = parseInt(stateStocksCopy[indexOfTarget].shares);
+				tempShares += parseInt(addedShares);
+				stateStocksCopy[indexOfTarget].shares = parseInt(tempShares);
+				stateStocksCopy[indexOfTarget].info = info.price;
 			}
-		});
+		}
+		updateAssets(stateStocksCopy);
+		setStocks(stateStocksCopy);
 	};
 	// array of JSX objects (one for each stock)
 	let allStocks = null;
@@ -91,8 +92,8 @@ function StockList(props) {
 								key={curStock.symbol}
 								symbol={curStock.symbol}
 								shares={curStock.shares}
+								info={curStock.info}
 								remove={(event) => removeStockHandler(event, curStock.symbol)}
-								changeAccountValue={props.updateAccountValue}
 							/>
 						);
 					})}

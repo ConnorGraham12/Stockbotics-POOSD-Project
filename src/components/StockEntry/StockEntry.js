@@ -9,45 +9,22 @@ import './StockEntry.css';
 // trying to decide if the stock entry should be dummy
 // component or not
 const StockEntry = (props) => {
-	const [stockInfo, setStockInfo] = useState({ price: [] });
-	const [isBusy, setIsBusy] = useState(true);
-
-	useEffect(() => {
-		let isMounted = true;
-
-		getStockInfo(props.symbol).then((info) => {
-			if (isMounted) {
-				setStockInfo({ price: info.price });
-				// console.log('EXPECTED: ' + info.price.regularMarketPrice * props.shares)
-				//props.changeAccountValue(info.price.regularMarketPrice * props.shares);
-				setIsBusy(false);
-			}
-		});
-		return () => {
-			isMounted = false;
-		};
-	}, [stockInfo.price.regularMarketPrice, props.shares]);
-
-	// useEffect(() => {
-	// 	if (!isBusy) props.changeAccountValue(stockInfo.price.regularMarketPrice * props.numAdded);
-	// }, [props.shares]);
-
-	return isBusy ? (
-		<div></div>
+	return !props.info ? (
+		<div>NO INFO</div>
 	) : (
 		<div className='row'>
 			<div className='company'>
-				<h4>{stockInfo.price.shortName + ' '}</h4>
+				<h4>{props.info.shortName + ' '}</h4>
 			</div>
 
 			<div className='info'>
 				{/* <DisplayBox info={'Symbol: ' + props.symbol} /> */}
 				<DisplayBox info={'Shares: ' + props.shares} />
-				<DisplayBox info={'Total: $' + stockInfo.price.regularMarketPrice * props.shares} />
+				<DisplayBox info={'Total: $' + props.info.regularMarketPrice * props.shares} />
 				{/* <DisplayBox info={props.oneDayReturn} /> */}
 				{/* <DisplayBox info={props.overallReturn} /> */}
 				{/* <DisplayBox info={props.returnWithSells} /> */}
-				<DisplayBox info={'Price/Share: $' + stockInfo.price.regularMarketPrice} />
+				<DisplayBox info={'Price/Share: $' + props.info.regularMarketPrice} />
 			</div>
 
 			<button className='trash' onClick={props.remove}>
