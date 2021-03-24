@@ -161,20 +161,20 @@ Connor Graham - Fixed CSS resizabilty Issues and improved readability for dark m
 - [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
 - [Source Code](https://github.com/ConnorGraham12/POOSD-Project/tree/main/src)
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
-- Burndown Chart
+- [Burndown Chart](https://docs.google.com/document/d/1BIwlF9H16u_LLUshDHjW2SsxpKsgI_rCaoEXYLNKTfQ/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
 - [Product Demonstration](https://www.youtube.com/watch?v=ov7eZsnmaxc)
 
 ## Task Allocation
 
-John Murphy - Started chart implimentation, assisted in updating account values. 
+John Murphy - Started chart implimentation, assisted in updating account values, updated burndown, velocity chart, and trello board. 
 
 Clayton Patterson - Continued work on dark mode toggle
 
-Kirk Carmichael - Started chart implementation, fixed infinite post requests bug. 
+Kirk Carmichael - Started chart implementation, fixed infinite post requests bug, updated burndown chart. 
 
-Quinn Kildare - Refactored stock list and stock entry and dynamically updated account values.  
+Quinn Kildare - Refactored stock list and stock entry and dynamically updated account values, updated burndown chart.  
 
-Connor Graham - traced and fixed bug where prices were being double updated. Updated trello. 
+Connor Graham - traced and fixed bug where prices were being double updated. Updated trello, updated burndown chart and trello board. 
 
