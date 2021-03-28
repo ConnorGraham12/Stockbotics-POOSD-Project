@@ -65,6 +65,7 @@ function StockList(props) {
 		});
 		var info = await getStockInfo(searchSymbol);
 		if (info) {
+			console.log(info);
 			if (indexOfTarget == -1)
 				stateStocksCopy.push({ symbol: searchSymbol, shares: parseInt(addedShares), info: info.price });
 			else {
