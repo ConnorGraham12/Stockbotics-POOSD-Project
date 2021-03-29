@@ -197,7 +197,7 @@ Clayton Patterson -
 
 Kirk Carmichael - 
 
-Quinn Kildare -   
+Quinn Kildare - Implemented Doughnut chart from chartjs to show breakdown of users stocks
 
 Connor Graham - 
 
