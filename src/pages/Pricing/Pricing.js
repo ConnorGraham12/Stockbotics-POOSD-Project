@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import DisplayBox from '../misc/DisplayBox.js';
+import DisplayBox from '../../components/misc/DisplayBox.js';
 import getStockInfo from '../../services/backend';
-import './StockEntry.css';
-
+import './Pricing.css';
 
 const Pricing = (props) => {
 	return !props.info ? (

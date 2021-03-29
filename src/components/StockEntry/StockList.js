@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './StockEntry.css';
 import StockEntry from './StockEntry.js';
 import { getAssets, updateAssets } from '../../services/firebase';
@@ -12,37 +12,13 @@ import { Scrollbars } from 'react-custom-scrollbars';
 
 function StockList(props) {
 	// this is the state of the StockList
-	const [stocks, setStocks] = useState([]);
 	const [searchSymbol, setSearchSymbol] = useState('');
 	const [addedShares, setAddedShares] = useState(0);
-	const [isLoading, setIsLoading] = useState(true);
 
-	useEffect(async () => {
-		if (isLoading)
-			firebase.auth().onAuthStateChanged(async (user) => {
-				if (user) {
-					var assets = await getAssets();
-					setStocks(assets);
-				}
-				setIsLoading(false);
-			});
-	});
-
-	useEffect(() => {
-		if (!isLoading) {
-			let accountValue = 0;
-			stocks.map((asset) => {
-				//console.log(asset.info.regularMarketPrice * asset.shares);
-				accountValue += asset.shares * asset.info.regularMarketPrice;
-			});
-			props.setAccountValue(accountValue);
-		}
-	}, [stocks]);
-
-	// remove stocks from portfolio
+	// remove props.stocks from portfolio
 	const removeStockHandler = async (event, stockID) => {
 		// create a copy of the current stock array in state (don't mutate the state)
-		const stateStocksCopy = [...stocks];
+		const stateStocksCopy = [...props.stocks];
 
 		// get the index of the stock we want to delete
 		const indexOfTarget = stateStocksCopy.findIndex((curStock) => {
@@ -52,13 +28,13 @@ function StockList(props) {
 		// remove the stock at that index
 		stateStocksCopy.splice(indexOfTarget, 1);
 		updateAssets(stateStocksCopy);
-		setStocks(stateStocksCopy);
+		props.setStocks(stateStocksCopy);
 	};
 
-	// add stocks to the portfolio
+	// add props.stocks to the portfolio
 	const addStockHandler = async () => {
 		if (searchSymbol == '' || addedShares == 0) return alert('PLEASE INPUT A SYMBOL/SHARE AMOUNT');
-		const stateStocksCopy = [...stocks];
+		const stateStocksCopy = [...props.stocks];
 
 		let indexOfTarget = stateStocksCopy.findIndex((curStock) => {
 			return curStock.symbol == searchSymbol;
@@ -71,22 +47,26 @@ function StockList(props) {
 			else {
 				var tempShares = parseInt(stateStocksCopy[indexOfTarget].shares);
 				tempShares += parseInt(addedShares);
-				stateStocksCopy[indexOfTarget].shares = parseInt(tempShares);
-				stateStocksCopy[indexOfTarget].info = info.price;
+				if (tempShares <= 0) {
+					stateStocksCopy.splice(indexOfTarget, 1);
+				} else {
+					stateStocksCopy[indexOfTarget].shares = parseInt(tempShares);
+					stateStocksCopy[indexOfTarget].info = info.price;
+				}
 			}
 		}
 		updateAssets(stateStocksCopy);
-		setStocks(stateStocksCopy);
+		props.setStocks(stateStocksCopy);
 	};
 	// array of JSX objects (one for each stock)
 	let allStocks = null;
 	const showStocks = () => {
-		return !stocks || stocks.length == 0 ? (
+		return !props.stocks || props.stocks.length == 0 ? (
 			<div className='Stock-Items'>You don't have any stocks... maybe you should add one...</div>
 		) : (
 			<div className='Stock-Items'>
 				<Scrollbars>
-					{stocks.map((curStock) => {
+					{props.stocks.map((curStock) => {
 						// console.log(accountValue);
 						return (
 							<StockEntry
@@ -108,7 +88,11 @@ function StockList(props) {
 			<h1>My Dashboard</h1>
 			<div className='Spacing'>
 				<button onClick={addStockHandler}>add stock</button>
-				<input type='text' placeholder='stock symbol' onInput={(e) => setSearchSymbol(e.target.value)}></input>
+				<input
+					type='text'
+					placeholder='stock symbol'
+					onInput={(e) => setSearchSymbol(e.target.value.toUpperCase())}
+				></input>
 				<input
 					type='number'
 					placeholder='number of shares'

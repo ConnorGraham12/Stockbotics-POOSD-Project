@@ -6,23 +6,34 @@ var router = express.Router();
 express().use(bodyParser.urlencoded({ extended: false }));
 express().use(bodyParser.json());
 
+const curDate = new Date();
+const prevDate = new Date(curDate.getDate() - 7);
+
 /* GET users listing. */
 router.post('/', function (req, res, next) {
-	// Comment out this line:
-	//res.send('respond with a resource');
-
-	// And insert something like this instead:
-	yahooFinance.quote(
-		{
-			symbol: req.body.symbol,
-			modules: ['price', 'summaryDetail'], // see the docs for the full list
-		},
-		function (err, quotes) {
-			// ...
-
-			res.json(quotes);
-		}
-	);
+	if (req.body.type == 'historical') {
+		yahooFinance.historical(
+			{
+				symbol: req.body.symbol,
+				from: prevDate,
+				to: curDate,
+				period: 'd',
+			},
+			function (err, quotes) {
+				res.json(quotes);
+			}
+		);
+	} else {
+		yahooFinance.quote(
+			{
+				symbol: req.body.symbol,
+				modules: ['price', 'summaryDetail'],
+			},
+			function (err, quotes) {
+				res.json(quotes);
+			}
+		);
+	}
 });
 
 module.exports = router;
