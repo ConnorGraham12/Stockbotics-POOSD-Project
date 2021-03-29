@@ -187,7 +187,7 @@ Connor Graham - traced and fixed bug where prices were being double updated. Upd
 - [Burndown Chart] (https://docs.google.com/document/d/1a2j4zujgHHvU2vCMGgyhbESTZ37Q9BWRwy5PHcoIZao/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
-- [Product Demonstration](https://www.youtube.com/watch?v=ov7eZsnmaxc)
+- [Product Demonstration](https://www.youtube.com/watch?v=I7e5oIKv91Y)
 
 ## Task Allocation
 
