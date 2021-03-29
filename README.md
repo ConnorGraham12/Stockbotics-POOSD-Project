@@ -195,7 +195,7 @@ John Murphy - Fixed case sensitive bug that would allow for seperate duplicate s
 
 Clayton Patterson - 
 
-Kirk Carmichael - 
+Kirk Carmichael - Helped implement chart using chartjs
 
 Quinn Kildare - Implemented Doughnut chart from chartjs to show breakdown of users stocks
 
