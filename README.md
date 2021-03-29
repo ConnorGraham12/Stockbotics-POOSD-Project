@@ -199,6 +199,6 @@ Kirk Carmichael -
 
 Quinn Kildare - Implemented Doughnut chart from chartjs to show breakdown of users stocks
 
-Connor Graham - 
+Connor Graham - Moved stock states to dashboard to create and support doughnut chart. 
 
 
