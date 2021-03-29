@@ -42,9 +42,10 @@ function StockList(props) {
 		var info = await getStockInfo(searchSymbol);
 		if (info) {
 			console.log(info);
-			if (indexOfTarget == -1)
-				stateStocksCopy.push({ symbol: searchSymbol, shares: parseInt(addedShares), info: info.price });
-			else {
+			if (indexOfTarget == -1) {
+				if (addedShares > 0)
+					stateStocksCopy.push({ symbol: searchSymbol, shares: parseInt(addedShares), info: info.price });
+			} else {
 				var tempShares = parseInt(stateStocksCopy[indexOfTarget].shares);
 				tempShares += parseInt(addedShares);
 				if (tempShares <= 0) {
