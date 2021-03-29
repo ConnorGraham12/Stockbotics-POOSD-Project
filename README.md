@@ -184,7 +184,7 @@ Connor Graham - traced and fixed bug where prices were being double updated. Upd
 - [Requirements](https://github.com/ConnorGraham12/POOSD-Project/blob/main/artifacts/requirements.md)
 - [Source Code](https://github.com/ConnorGraham12/POOSD-Project/tree/main/src)
 - [Velocity Chart](https://docs.google.com/document/d/10O7_zbwDUMULH7CaQvXiZ5Dw8dJtq4CDEzK54hyNN5c/edit?usp=sharing)
-- [Burndown Chart] (https://docs.google.com/document/d/1a2j4zujgHHvU2vCMGgyhbESTZ37Q9BWRwy5PHcoIZao/edit?usp=sharing)
+- [Burndown Chart](https://docs.google.com/document/d/1a2j4zujgHHvU2vCMGgyhbESTZ37Q9BWRwy5PHcoIZao/edit?usp=sharing)
 - [System Architecture](https://github.com/ConnorGraham12/POOSD-Project/blob/main/system-architecture.MD)
 - [Automated Tests](https://github.com/ConnorGraham12/POOSD-Project/blob/main/src/App.test.js)
 - [Product Demonstration](https://www.youtube.com/watch?v=I7e5oIKv91Y)
