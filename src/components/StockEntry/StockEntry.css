@@ -1,13 +1,14 @@
 .StockListItems {
 	height: 100%;
+	min-width: 58vw;
+	max-width: 58vw;
 }
 
 .Stock-Items {
 	height: 80%;
 	overflow-y: auto;
-	min-width: 58vw;
-	max-width: 58vw;
 }
+
 .Spacing {
 	margin-bottom: 2%;
 }
