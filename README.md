@@ -191,7 +191,7 @@ Connor Graham - traced and fixed bug where prices were being double updated. Upd
 
 ## Task Allocation
 
-John Murphy - 
+John Murphy - Fixed case sensitive bug that would allow for seperate duplicate stocks
 
 Clayton Patterson - 
 
